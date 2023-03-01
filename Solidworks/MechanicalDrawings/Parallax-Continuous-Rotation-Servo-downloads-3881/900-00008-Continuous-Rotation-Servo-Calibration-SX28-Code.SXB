@@ -1,0 +1,23 @@
+' CRServoCalibrateSX28.sxb  V1.0 10/10/08 Parallax Inc.
+' Calibrate a Parallax Continuous Rotation Servo
+' External oscillator strongly recommended for servos
+' Code is ready to use a 4 MHz external oscillator
+' Use alternative DEVICE and FREQ lines for 50 MHz external oscillator
+' Connect servo signal line to SX28 I/O pin RA.)
+' Or, change Servo PIN declaration
+
+' DEVICE  SX28, OSCHS3, TURBO, STACKX, OPTIONX	' uncomment for 50 MHz oscillator
+' FREQ	50_000_000				' uncomment for 50 MHz oscillator
+
+DEVICE	SX28, OSCXT2, TURBO, STACKX, OPTIONX	' comment out for 50 MHz oscillator
+FREQ	4_000_000				' comment out for 50 MHz oscillator
+
+ToServo	PIN RA.0				' Use I/O pin RA.0, or change here 	 
+
+PROGRAM Start
+
+Start:
+ DO
+   PULSOUT ToServo, 150				' ToServo pin outputs 1.5 ms pulse
+   PAUSE 20					' refresh pulse every 20 milliseconds
+ LOOP
