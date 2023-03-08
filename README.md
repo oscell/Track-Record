@@ -6,3 +6,6 @@ Find us on [Twitter](https://twitter.com/TrackrecordTeam) and [Instagram](https:
 The following need to be installed:
 - [CMake](https://cmake.org/download/)
 - [OpenCV](https://opencv.org/releases/)
+
+## Tutorials
+[CMake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
