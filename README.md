@@ -8,4 +8,6 @@ The following need to be installed:
 - [OpenCV](https://opencv.org/releases/)
 
 ## Tutorials
-[CMake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+[Getting started: CMake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+
+[Getting started: OpenCV](https://www.opencv-srf.com/2017/11/install-opencv-with-visual-studio.html)
