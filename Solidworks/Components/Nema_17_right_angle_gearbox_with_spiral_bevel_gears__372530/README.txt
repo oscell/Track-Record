@@ -1,0 +1,1 @@
+Nema 17 right angle gearbox with spiral bevel gears  by dasaki on Thingiverse: https://www.thingiverse.com/thing:372530
