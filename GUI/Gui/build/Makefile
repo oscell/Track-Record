@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Desktop/Gui
+CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record/GUI/Gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Desktop/Gui/build
+CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record/GUI/Gui/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Desktop/Gui/build/CMakeFiles /home/oscar/Desktop/Gui/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles /home/oscar/Desktop/Track-Record/GUI/Gui/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Desktop/Gui/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,61 +162,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FirstQT
+# Target rules for targets named GUI1_0
 
 # Build rule for target.
-FirstQT: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FirstQT
-.PHONY : FirstQT
+GUI1_0: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GUI1_0
+.PHONY : GUI1_0
 
 # fast build rule for target.
-FirstQT/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/build
-.PHONY : FirstQT/fast
+GUI1_0/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/build
+.PHONY : GUI1_0/fast
 
 #=============================================================================
-# Target rules for targets named FirstQT_autogen
+# Target rules for targets named GUI1_0_autogen
 
 # Build rule for target.
-FirstQT_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FirstQT_autogen
-.PHONY : FirstQT_autogen
+GUI1_0_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GUI1_0_autogen
+.PHONY : GUI1_0_autogen
 
 # fast build rule for target.
-FirstQT_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT_autogen.dir/build.make CMakeFiles/FirstQT_autogen.dir/build
-.PHONY : FirstQT_autogen/fast
+GUI1_0_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0_autogen.dir/build.make CMakeFiles/GUI1_0_autogen.dir/build
+.PHONY : GUI1_0_autogen/fast
 
-FirstQT_autogen/mocs_compilation.o: FirstQT_autogen/mocs_compilation.cpp.o
-.PHONY : FirstQT_autogen/mocs_compilation.o
+GUI1_0_autogen/mocs_compilation.o: GUI1_0_autogen/mocs_compilation.cpp.o
+.PHONY : GUI1_0_autogen/mocs_compilation.o
 
 # target to build an object file
-FirstQT_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/FirstQT_autogen/mocs_compilation.cpp.o
-.PHONY : FirstQT_autogen/mocs_compilation.cpp.o
+GUI1_0_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.o
 
-FirstQT_autogen/mocs_compilation.i: FirstQT_autogen/mocs_compilation.cpp.i
-.PHONY : FirstQT_autogen/mocs_compilation.i
+GUI1_0_autogen/mocs_compilation.i: GUI1_0_autogen/mocs_compilation.cpp.i
+.PHONY : GUI1_0_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-FirstQT_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/FirstQT_autogen/mocs_compilation.cpp.i
-.PHONY : FirstQT_autogen/mocs_compilation.cpp.i
+GUI1_0_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.i
 
-FirstQT_autogen/mocs_compilation.s: FirstQT_autogen/mocs_compilation.cpp.s
-.PHONY : FirstQT_autogen/mocs_compilation.s
+GUI1_0_autogen/mocs_compilation.s: GUI1_0_autogen/mocs_compilation.cpp.s
+.PHONY : GUI1_0_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-FirstQT_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/FirstQT_autogen/mocs_compilation.cpp.s
-.PHONY : FirstQT_autogen/mocs_compilation.cpp.s
+GUI1_0_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -224,7 +224,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -232,7 +232,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/mainwindow.o: src/mainwindow.cpp.o
@@ -240,7 +240,7 @@ src/mainwindow.o: src/mainwindow.cpp.o
 
 # target to build an object file
 src/mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/mainwindow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/mainwindow.cpp.o
 .PHONY : src/mainwindow.cpp.o
 
 src/mainwindow.i: src/mainwindow.cpp.i
@@ -248,7 +248,7 @@ src/mainwindow.i: src/mainwindow.cpp.i
 
 # target to preprocess a source file
 src/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/mainwindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/mainwindow.cpp.i
 .PHONY : src/mainwindow.cpp.i
 
 src/mainwindow.s: src/mainwindow.cpp.s
@@ -256,7 +256,7 @@ src/mainwindow.s: src/mainwindow.cpp.s
 
 # target to generate assembly for a file
 src/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstQT.dir/build.make CMakeFiles/FirstQT.dir/src/mainwindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/mainwindow.cpp.s
 .PHONY : src/mainwindow.cpp.s
 
 # Help Target
@@ -271,11 +271,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... FirstQT_autogen"
-	@echo "... FirstQT"
-	@echo "... FirstQT_autogen/mocs_compilation.o"
-	@echo "... FirstQT_autogen/mocs_compilation.i"
-	@echo "... FirstQT_autogen/mocs_compilation.s"
+	@echo "... GUI1_0_autogen"
+	@echo "... GUI1_0"
+	@echo "... GUI1_0_autogen/mocs_compilation.o"
+	@echo "... GUI1_0_autogen/mocs_compilation.i"
+	@echo "... GUI1_0_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

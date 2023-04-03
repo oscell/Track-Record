@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Desktop/server
+CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record/GUI/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Desktop/server/build
+CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record/GUI/server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/websocket-server-test.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/websocket-server-test.dir/flags.make
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.o: CMakeFiles/websocket-server-test.dir/flags.make
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.o: ../test/tests.cpp
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.o: CMakeFiles/websocket-server-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/websocket-server-test.dir/test/tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-test.dir/test/tests.cpp.o -MF CMakeFiles/websocket-server-test.dir/test/tests.cpp.o.d -o CMakeFiles/websocket-server-test.dir/test/tests.cpp.o -c /home/oscar/Desktop/server/test/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/websocket-server-test.dir/test/tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-test.dir/test/tests.cpp.o -MF CMakeFiles/websocket-server-test.dir/test/tests.cpp.o.d -o CMakeFiles/websocket-server-test.dir/test/tests.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/server/test/tests.cpp
 
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-server-test.dir/test/tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/server/test/tests.cpp > CMakeFiles/websocket-server-test.dir/test/tests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/server/test/tests.cpp > CMakeFiles/websocket-server-test.dir/test/tests.cpp.i
 
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-server-test.dir/test/tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/server/test/tests.cpp -o CMakeFiles/websocket-server-test.dir/test/tests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/server/test/tests.cpp -o CMakeFiles/websocket-server-test.dir/test/tests.cpp.s
 
 CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o: CMakeFiles/websocket-server-test.dir/flags.make
 CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o: ../test/WSTest.cpp
 CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o: CMakeFiles/websocket-server-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o -MF CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o.d -o CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o -c /home/oscar/Desktop/server/test/WSTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o -MF CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o.d -o CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/server/test/WSTest.cpp
 
 CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/server/test/WSTest.cpp > CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/server/test/WSTest.cpp > CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.i
 
 CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/server/test/WSTest.cpp -o CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/server/test/WSTest.cpp -o CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.s
 
 # Object files for target websocket-server-test
 websocket__server__test_OBJECTS = \
@@ -113,7 +113,7 @@ websocket-server-test: /usr/local/lib/oatpp-1.3.0/liboatpp-websocket.a
 websocket-server-test: /usr/local/lib/oatpp-1.3.0/liboatpp-test.a
 websocket-server-test: /usr/local/lib/oatpp-1.3.0/liboatpp.a
 websocket-server-test: CMakeFiles/websocket-server-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable websocket-server-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable websocket-server-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/websocket-server-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/websocket-server-test.dir/clean:
 .PHONY : CMakeFiles/websocket-server-test.dir/clean
 
 CMakeFiles/websocket-server-test.dir/depend:
-	cd /home/oscar/Desktop/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/server /home/oscar/Desktop/server /home/oscar/Desktop/server/build /home/oscar/Desktop/server/build /home/oscar/Desktop/server/build/CMakeFiles/websocket-server-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oscar/Desktop/Track-Record/GUI/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record/GUI/server /home/oscar/Desktop/Track-Record/GUI/server /home/oscar/Desktop/Track-Record/GUI/server/build /home/oscar/Desktop/Track-Record/GUI/server/build /home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/websocket-server-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/websocket-server-test.dir/depend
 

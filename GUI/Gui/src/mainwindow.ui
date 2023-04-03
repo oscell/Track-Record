@@ -17,14 +17,14 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>80</y>
-      <width>261</width>
-      <height>81</height>
+      <x>170</x>
+      <y>110</y>
+      <width>291</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
-     <string>Start</string>
+     <string>PushButton</string>
     </property>
    </widget>
   </widget>
@@ -37,12 +37,6 @@
      <height>20</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuasjh">
-    <property name="title">
-     <string>Main</string>
-    </property>
-   </widget>
-   <addaction name="menuasjh"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

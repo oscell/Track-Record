@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/oscar/Desktop/server/src -isystem /usr/local/include/oatpp-1.3.0/oatpp -isystem /usr/local/include/oatpp-1.3.0/oatpp-websocket
+CXX_INCLUDES = -I/home/oscar/Desktop/Track-Record/GUI/server/src -isystem /usr/local/include/oatpp-1.3.0/oatpp -isystem /usr/local/include/oatpp-1.3.0/oatpp-websocket
 
 CXX_FLAGS = -std=c++11
 

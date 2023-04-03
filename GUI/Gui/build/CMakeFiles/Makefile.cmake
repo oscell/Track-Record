@@ -288,13 +288,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/FirstQT_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/GUI1_0_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/FirstQT.dir/DependInfo.cmake"
-  "CMakeFiles/FirstQT_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/GUI1_0.dir/DependInfo.cmake"
+  "CMakeFiles/GUI1_0_autogen.dir/DependInfo.cmake"
   )

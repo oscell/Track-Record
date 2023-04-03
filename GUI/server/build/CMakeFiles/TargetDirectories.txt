@@ -1,6 +1,6 @@
-/home/oscar/Desktop/server/build/CMakeFiles/websocket-server-lib.dir
-/home/oscar/Desktop/server/build/CMakeFiles/websocket-server-exe.dir
-/home/oscar/Desktop/server/build/CMakeFiles/websocket-server-test.dir
-/home/oscar/Desktop/server/build/CMakeFiles/test.dir
-/home/oscar/Desktop/server/build/CMakeFiles/edit_cache.dir
-/home/oscar/Desktop/server/build/CMakeFiles/rebuild_cache.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/websocket-server-lib.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/websocket-server-exe.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/websocket-server-test.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/test.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/edit_cache.dir
+/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,8 @@
-/home/oscar/Desktop/Gui/build/CMakeFiles/FirstQT.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/edit_cache.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/rebuild_cache.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/list_install_components.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/install.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/install/local.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/install/strip.dir
-/home/oscar/Desktop/Gui/build/CMakeFiles/FirstQT_autogen.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/GUI1_0.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/edit_cache.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/rebuild_cache.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/list_install_components.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/install.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/install/local.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/install/strip.dir
+/home/oscar/Desktop/Track-Record/GUI/Gui/build/CMakeFiles/GUI1_0_autogen.dir

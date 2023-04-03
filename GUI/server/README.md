@@ -41,8 +41,8 @@ script to install required oatpp modules.
 After all dependencies satisfied:
 
 ```
-$ mkdir build && cd build
-$ cmake ..
-$ make 
-$ ./websocket-server-exe       # - run application.
+cmake CMakeList.txt -B build
+cd build
+make 
+./websocket-server-exe       # - run application.
 ```

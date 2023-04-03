@@ -1,0 +1,6 @@
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/websocket-server-lib.dir
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/websocket-server-exe.dir
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/websocket-server-test.dir
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/test.dir
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/edit_cache.dir
+/home/oscar/Desktop/Track-Record/GUI/server/CMakeFiles/rebuild_cache.dir

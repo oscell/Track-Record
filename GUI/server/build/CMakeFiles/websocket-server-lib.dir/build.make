@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Desktop/server
+CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record/GUI/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Desktop/server/build
+CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record/GUI/server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/websocket-server-lib.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/websocket-server-lib.dir/flags.make
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o: CMakeFiles/websocket-server-lib.dir/flags.make
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o: ../src/websocket/WSListener.cpp
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o: CMakeFiles/websocket-server-lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o -MF CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o.d -o CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o -c /home/oscar/Desktop/server/src/websocket/WSListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o -MF CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o.d -o CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/server/src/websocket/WSListener.cpp
 
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/server/src/websocket/WSListener.cpp > CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/server/src/websocket/WSListener.cpp > CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.i
 
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/server/src/websocket/WSListener.cpp -o CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/server/src/websocket/WSListener.cpp -o CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.s
 
 # Object files for target websocket-server-lib
 websocket__server__lib_OBJECTS = \
@@ -93,7 +93,7 @@ websocket__server__lib_EXTERNAL_OBJECTS =
 libwebsocket-server-lib.a: CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o
 libwebsocket-server-lib.a: CMakeFiles/websocket-server-lib.dir/build.make
 libwebsocket-server-lib.a: CMakeFiles/websocket-server-lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libwebsocket-server-lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libwebsocket-server-lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/websocket-server-lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/websocket-server-lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/websocket-server-lib.dir/clean:
 .PHONY : CMakeFiles/websocket-server-lib.dir/clean
 
 CMakeFiles/websocket-server-lib.dir/depend:
-	cd /home/oscar/Desktop/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/server /home/oscar/Desktop/server /home/oscar/Desktop/server/build /home/oscar/Desktop/server/build /home/oscar/Desktop/server/build/CMakeFiles/websocket-server-lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oscar/Desktop/Track-Record/GUI/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record/GUI/server /home/oscar/Desktop/Track-Record/GUI/server /home/oscar/Desktop/Track-Record/GUI/server/build /home/oscar/Desktop/Track-Record/GUI/server/build /home/oscar/Desktop/Track-Record/GUI/server/build/CMakeFiles/websocket-server-lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/websocket-server-lib.dir/depend
 

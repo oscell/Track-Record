@@ -1,7 +1,7 @@
 CMakeFiles/websocket-server-lib.dir/src/websocket/WSListener.cpp.o: \
- /home/oscar/Desktop/server/src/websocket/WSListener.cpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/websocket/WSListener.cpp \
  /usr/include/stdc-predef.h \
- /home/oscar/Desktop/server/src/websocket/WSListener.hpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/websocket/WSListener.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/ConnectionHandler.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/WebSocket.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/Frame.hpp \

@@ -1,6 +1,7 @@
 CMakeFiles/websocket-server-test.dir/test/tests.cpp.o: \
- /home/oscar/Desktop/server/test/tests.cpp /usr/include/stdc-predef.h \
- /home/oscar/Desktop/server/test/WSTest.hpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/test/tests.cpp \
+ /usr/include/stdc-predef.h \
+ /home/oscar/Desktop/Track-Record/GUI/server/test/WSTest.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp/oatpp-test/UnitTest.hpp \
  /usr/include/c++/11/functional \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

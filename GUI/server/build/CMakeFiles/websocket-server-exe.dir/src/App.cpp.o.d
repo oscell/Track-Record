@@ -1,6 +1,7 @@
 CMakeFiles/websocket-server-exe.dir/src/App.cpp.o: \
- /home/oscar/Desktop/server/src/App.cpp /usr/include/stdc-predef.h \
- /home/oscar/Desktop/server/src/./controller/MyController.hpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/App.cpp \
+ /usr/include/stdc-predef.h \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/./controller/MyController.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/Handshaker.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/WebSocket.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/Frame.hpp \
@@ -273,8 +274,8 @@ CMakeFiles/websocket-server-exe.dir/src/App.cpp.o: \
  /usr/local/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/auth_undef.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/bundle_undef.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/cors_undef.hpp \
- /home/oscar/Desktop/server/src/./AppComponent.hpp \
- /home/oscar/Desktop/server/src/./websocket/WSListener.hpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/./AppComponent.hpp \
+ /home/oscar/Desktop/Track-Record/GUI/server/src/./websocket/WSListener.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/ConnectionHandler.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/WebSocket.hpp \
  /usr/local/include/oatpp-1.3.0/oatpp-websocket/oatpp-websocket/WebSocket.hpp \

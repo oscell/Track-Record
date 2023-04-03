@@ -38,6 +38,9 @@ public:
           "<p>"
             "<code>websocket endpoint is: localhost:8000/ws</code>"
           "</p>"
+          "<p>"
+            "<a href = 'status' >status</a>"
+          "</p>"
         "</body>"
       "</html>";
 
@@ -45,7 +48,7 @@ public:
     
   };
 
-  ENDPOINT("GET", "/status", papapa) {
+  ENDPOINT("GET", "/status", status) {
 
     const char* pageTemplate =
       "{\"power\":0}";
