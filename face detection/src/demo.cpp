@@ -14,7 +14,7 @@ int main()
 
     // Load the face detection model
     cv::CascadeClassifier face_cascade;
-    if (!face_cascade.load("/usr/include/opencv/data/haarcascades/haarcascade_frontalface_alt.xml"))
+    if (!face_cascade.load("/home/oscar/opencv/data/haarcascades/haarcascade_frontalface_alt.xml"))
     {
         std::cerr << "Unable to load the face detection model." << std::endl;
         return -1;
