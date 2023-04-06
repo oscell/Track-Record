@@ -69,28 +69,28 @@ include CMakeFiles/facedet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/facedet.dir/flags.make
 
-CMakeFiles/facedet.dir/demo.cpp.o: CMakeFiles/facedet.dir/flags.make
-CMakeFiles/facedet.dir/demo.cpp.o: ../demo.cpp
-CMakeFiles/facedet.dir/demo.cpp.o: CMakeFiles/facedet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/facedet.dir/demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/facedet.dir/demo.cpp.o -MF CMakeFiles/facedet.dir/demo.cpp.o.d -o CMakeFiles/facedet.dir/demo.cpp.o -c "/home/oscar/Desktop/Track-Record/face detection/demo.cpp"
+CMakeFiles/facedet.dir/src/demo.cpp.o: CMakeFiles/facedet.dir/flags.make
+CMakeFiles/facedet.dir/src/demo.cpp.o: ../src/demo.cpp
+CMakeFiles/facedet.dir/src/demo.cpp.o: CMakeFiles/facedet.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/facedet.dir/src/demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/facedet.dir/src/demo.cpp.o -MF CMakeFiles/facedet.dir/src/demo.cpp.o.d -o CMakeFiles/facedet.dir/src/demo.cpp.o -c "/home/oscar/Desktop/Track-Record/face detection/src/demo.cpp"
 
-CMakeFiles/facedet.dir/demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/facedet.dir/demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/oscar/Desktop/Track-Record/face detection/demo.cpp" > CMakeFiles/facedet.dir/demo.cpp.i
+CMakeFiles/facedet.dir/src/demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/facedet.dir/src/demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/oscar/Desktop/Track-Record/face detection/src/demo.cpp" > CMakeFiles/facedet.dir/src/demo.cpp.i
 
-CMakeFiles/facedet.dir/demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/facedet.dir/demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscar/Desktop/Track-Record/face detection/demo.cpp" -o CMakeFiles/facedet.dir/demo.cpp.s
+CMakeFiles/facedet.dir/src/demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/facedet.dir/src/demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscar/Desktop/Track-Record/face detection/src/demo.cpp" -o CMakeFiles/facedet.dir/src/demo.cpp.s
 
 # Object files for target facedet
 facedet_OBJECTS = \
-"CMakeFiles/facedet.dir/demo.cpp.o"
+"CMakeFiles/facedet.dir/src/demo.cpp.o"
 
 # External object files for target facedet
 facedet_EXTERNAL_OBJECTS =
 
-facedet: CMakeFiles/facedet.dir/demo.cpp.o
+facedet: CMakeFiles/facedet.dir/src/demo.cpp.o
 facedet: CMakeFiles/facedet.dir/build.make
 facedet: /usr/local/lib/libopencv_gapi.so.4.7.0
 facedet: /usr/local/lib/libopencv_highgui.so.4.7.0
