@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" "/home/oscar/Desktop/Track-Record/face detection/build//CMakeFiles/progress.marks"
@@ -115,6 +160,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named GUI1_0
+
+# Build rule for target.
+GUI1_0: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GUI1_0
+.PHONY : GUI1_0
+
+# fast build rule for target.
+GUI1_0/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/build
+.PHONY : GUI1_0/fast
 
 #=============================================================================
 # Target rules for targets named facedet
@@ -154,6 +212,202 @@ client: cmake_check_build_system
 client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named GUI1_0_autogen
+
+# Build rule for target.
+GUI1_0_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GUI1_0_autogen
+.PHONY : GUI1_0_autogen
+
+# fast build rule for target.
+GUI1_0_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0_autogen.dir/build.make CMakeFiles/GUI1_0_autogen.dir/build
+.PHONY : GUI1_0_autogen/fast
+
+#=============================================================================
+# Target rules for targets named facedet_autogen
+
+# Build rule for target.
+facedet_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 facedet_autogen
+.PHONY : facedet_autogen
+
+# fast build rule for target.
+facedet_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet_autogen.dir/build.make CMakeFiles/facedet_autogen.dir/build
+.PHONY : facedet_autogen/fast
+
+#=============================================================================
+# Target rules for targets named server_autogen
+
+# Build rule for target.
+server_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_autogen
+.PHONY : server_autogen
+
+# fast build rule for target.
+server_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/build
+.PHONY : server_autogen/fast
+
+#=============================================================================
+# Target rules for targets named client_autogen
+
+# Build rule for target.
+client_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_autogen
+.PHONY : client_autogen
+
+# fast build rule for target.
+client_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_autogen.dir/build.make CMakeFiles/client_autogen.dir/build
+.PHONY : client_autogen/fast
+
+GUI1_0_autogen/mocs_compilation.o: GUI1_0_autogen/mocs_compilation.cpp.o
+.PHONY : GUI1_0_autogen/mocs_compilation.o
+
+# target to build an object file
+GUI1_0_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.o
+
+GUI1_0_autogen/mocs_compilation.i: GUI1_0_autogen/mocs_compilation.cpp.i
+.PHONY : GUI1_0_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+GUI1_0_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.i
+
+GUI1_0_autogen/mocs_compilation.s: GUI1_0_autogen/mocs_compilation.cpp.s
+.PHONY : GUI1_0_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+GUI1_0_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s
+.PHONY : GUI1_0_autogen/mocs_compilation.cpp.s
+
+client_autogen/mocs_compilation.o: client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.o
+
+# target to build an object file
+client_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.cpp.o
+
+client_autogen/mocs_compilation.i: client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+client_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.cpp.i
+
+client_autogen/mocs_compilation.s: client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+client_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.cpp.s
+
+facedet_autogen/mocs_compilation.o: facedet_autogen/mocs_compilation.cpp.o
+.PHONY : facedet_autogen/mocs_compilation.o
+
+# target to build an object file
+facedet_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/facedet_autogen/mocs_compilation.cpp.o
+.PHONY : facedet_autogen/mocs_compilation.cpp.o
+
+facedet_autogen/mocs_compilation.i: facedet_autogen/mocs_compilation.cpp.i
+.PHONY : facedet_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+facedet_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/facedet_autogen/mocs_compilation.cpp.i
+.PHONY : facedet_autogen/mocs_compilation.cpp.i
+
+facedet_autogen/mocs_compilation.s: facedet_autogen/mocs_compilation.cpp.s
+.PHONY : facedet_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+facedet_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/facedet_autogen/mocs_compilation.cpp.s
+.PHONY : facedet_autogen/mocs_compilation.cpp.s
+
+server_autogen/mocs_compilation.o: server_autogen/mocs_compilation.cpp.o
+.PHONY : server_autogen/mocs_compilation.o
+
+# target to build an object file
+server_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o
+.PHONY : server_autogen/mocs_compilation.cpp.o
+
+server_autogen/mocs_compilation.i: server_autogen/mocs_compilation.cpp.i
+.PHONY : server_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+server_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.i
+.PHONY : server_autogen/mocs_compilation.cpp.i
+
+server_autogen/mocs_compilation.s: server_autogen/mocs_compilation.cpp.s
+.PHONY : server_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+server_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.s
+.PHONY : server_autogen/mocs_compilation.cpp.s
+
+src/GUI/main.o: src/GUI/main.cpp.o
+.PHONY : src/GUI/main.o
+
+# target to build an object file
+src/GUI/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o
+.PHONY : src/GUI/main.cpp.o
+
+src/GUI/main.i: src/GUI/main.cpp.i
+.PHONY : src/GUI/main.i
+
+# target to preprocess a source file
+src/GUI/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.i
+.PHONY : src/GUI/main.cpp.i
+
+src/GUI/main.s: src/GUI/main.cpp.s
+.PHONY : src/GUI/main.s
+
+# target to generate assembly for a file
+src/GUI/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.s
+.PHONY : src/GUI/main.cpp.s
+
+src/GUI/mainwindow.o: src/GUI/mainwindow.cpp.o
+.PHONY : src/GUI/mainwindow.o
+
+# target to build an object file
+src/GUI/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o
+.PHONY : src/GUI/mainwindow.cpp.o
+
+src/GUI/mainwindow.i: src/GUI/mainwindow.cpp.i
+.PHONY : src/GUI/mainwindow.i
+
+# target to preprocess a source file
+src/GUI/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.i
+.PHONY : src/GUI/mainwindow.cpp.i
+
+src/GUI/mainwindow.s: src/GUI/mainwindow.cpp.s
+.PHONY : src/GUI/mainwindow.s
+
+# target to generate assembly for a file
+src/GUI/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GUI1_0.dir/build.make CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.s
+.PHONY : src/GUI/mainwindow.cpp.s
 
 src/client.o: src/client.cpp.o
 .PHONY : src/client.o
@@ -234,10 +488,37 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... GUI1_0_autogen"
+	@echo "... client_autogen"
+	@echo "... facedet_autogen"
+	@echo "... server_autogen"
+	@echo "... GUI1_0"
 	@echo "... client"
 	@echo "... facedet"
 	@echo "... server"
+	@echo "... GUI1_0_autogen/mocs_compilation.o"
+	@echo "... GUI1_0_autogen/mocs_compilation.i"
+	@echo "... GUI1_0_autogen/mocs_compilation.s"
+	@echo "... client_autogen/mocs_compilation.o"
+	@echo "... client_autogen/mocs_compilation.i"
+	@echo "... client_autogen/mocs_compilation.s"
+	@echo "... facedet_autogen/mocs_compilation.o"
+	@echo "... facedet_autogen/mocs_compilation.i"
+	@echo "... facedet_autogen/mocs_compilation.s"
+	@echo "... server_autogen/mocs_compilation.o"
+	@echo "... server_autogen/mocs_compilation.i"
+	@echo "... server_autogen/mocs_compilation.s"
+	@echo "... src/GUI/main.o"
+	@echo "... src/GUI/main.i"
+	@echo "... src/GUI/main.s"
+	@echo "... src/GUI/mainwindow.o"
+	@echo "... src/GUI/mainwindow.i"
+	@echo "... src/GUI/mainwindow.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"

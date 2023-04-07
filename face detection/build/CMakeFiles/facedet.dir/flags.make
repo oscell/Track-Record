@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/include" -isystem /usr/local/include/opencv4
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 
