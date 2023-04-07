@@ -25,38 +25,54 @@ pid_t run_executable(const char *executable) {
 }
 
 int main() {
-    int client_fd;
-    struct sockaddr_in server_addr;
+    int client_fd, server_fd;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t addr_len = sizeof(client_addr);
 
-    client_fd = socket(AF_INET, SOCK_STREAM, 0);
+    server_fd = socket(AF_INET, SOCK_STREAM, 0);
 
     server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(8080);
 
-    connect(client_fd, (struct sockaddr *)&server_addr, sizeof(server_addr));
+    bind(server_fd, (struct sockaddr *)&server_addr, sizeof(server_addr));
+    listen(server_fd, 1);
+
+    std::cout << "Listening on port 8080" << std::endl;
+
+    
 
     pid_t running_executable_pid = -1;
 
     while (true) {
-        int number;
-        recv(client_fd, &number, sizeof(number), 0);
-        std::cout << "Received: " << number << std::endl;
+        client_fd = accept(server_fd, (struct sockaddr *)&client_addr, &addr_len);
+        int number = -1;
+        int recv_status = recv(client_fd, &number, sizeof(number), 0);
 
-        if (number == 0) {
+        if (recv_status <= 0) {
+            std::cerr << "GUI disconnected" << std::endl;
+        }
+
+        std::cout << "Client received: " << number << std::endl;
+
+        if (number == 1) {
+            std::cout << "Received: " << number << std::endl;
+
+            if (running_executable_pid == -1) {
+                running_executable_pid = run_executable("./facedet");
+                std::cout << "Started executable" << std::endl;
+            } else {
+                std::cout << "Executable already running" << std::endl;
+            }
+        } else if (number == 0) {
+            std::cout << "Received: " << number << std::endl;
+
             if (running_executable_pid != -1) {
                 kill(running_executable_pid, SIGTERM);
                 std::cout << "Terminated executable" << std::endl;
                 running_executable_pid = -1;
-            }
-        } else if (number == 1) {
-            if (running_executable_pid == -1) {
-                // Set the path to the executable located in the same directory as the client
-                const char *executable_path = "./facedet";
-                running_executable_pid = run_executable(executable_path);
-                std::cout << "Started executable" << std::endl;
             } else {
-                std::cout << "Executable already running" << std::endl;
+                std::cout << "Executable not running" << std::endl;
             }
         }
 
@@ -64,6 +80,7 @@ int main() {
     }
 
     close(client_fd);
+    close(server_fd);
 
     return 0;
 }

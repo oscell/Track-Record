@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/oscar/Desktop/Track-Record/face detection/build/client_autogen/mocs_compilation.cpp" "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o.d"
   "/home/oscar/Desktop/Track-Record/face detection/src/client.cpp" "CMakeFiles/client.dir/src/client.cpp.o" "gcc" "CMakeFiles/client.dir/src/client.cpp.o.d"
   )
 
