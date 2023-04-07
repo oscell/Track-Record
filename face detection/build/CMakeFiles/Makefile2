@@ -65,7 +65,6 @@ CMAKE_BINARY_DIR = "/home/oscar/Desktop/Track-Record/face detection/build"
 # The main recursive "all" target.
 all: CMakeFiles/GUI1_0.dir/all
 all: CMakeFiles/facedet.dir/all
-all: CMakeFiles/server.dir/all
 all: CMakeFiles/client.dir/all
 .PHONY : all
 
@@ -76,11 +75,9 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/GUI1_0.dir/clean
 clean: CMakeFiles/facedet.dir/clean
-clean: CMakeFiles/server.dir/clean
 clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/GUI1_0_autogen.dir/clean
 clean: CMakeFiles/facedet_autogen.dir/clean
-clean: CMakeFiles/server_autogen.dir/clean
 clean: CMakeFiles/client_autogen.dir/clean
 .PHONY : clean
 
@@ -135,32 +132,6 @@ facedet: CMakeFiles/facedet.dir/rule
 CMakeFiles/facedet.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/clean
 .PHONY : CMakeFiles/facedet.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/server.dir
-
-# All Build rule for target.
-CMakeFiles/server.dir/all: CMakeFiles/server_autogen.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" --progress-num=14,15,16 "Built target server"
-.PHONY : CMakeFiles/server.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" 0
-.PHONY : CMakeFiles/server.dir/rule
-
-# Convenience name for target.
-server: CMakeFiles/server.dir/rule
-.PHONY : server
-
-# clean rule for target.
-CMakeFiles/server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
-.PHONY : CMakeFiles/server.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/client.dir
@@ -239,32 +210,6 @@ facedet_autogen: CMakeFiles/facedet_autogen.dir/rule
 CMakeFiles/facedet_autogen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet_autogen.dir/build.make CMakeFiles/facedet_autogen.dir/clean
 .PHONY : CMakeFiles/facedet_autogen.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/server_autogen.dir
-
-# All Build rule for target.
-CMakeFiles/server_autogen.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" --progress-num=17 "Built target server_autogen"
-.PHONY : CMakeFiles/server_autogen.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/server_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles" 0
-.PHONY : CMakeFiles/server_autogen.dir/rule
-
-# Convenience name for target.
-server_autogen: CMakeFiles/server_autogen.dir/rule
-.PHONY : server_autogen
-
-# clean rule for target.
-CMakeFiles/server_autogen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/clean
-.PHONY : CMakeFiles/server_autogen.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/client_autogen.dir

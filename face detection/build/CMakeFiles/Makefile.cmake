@@ -300,7 +300,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/GUI1_0_autogen.dir/AutogenInfo.json"
   "CMakeFiles/facedet_autogen.dir/AutogenInfo.json"
-  "CMakeFiles/server_autogen.dir/AutogenInfo.json"
   "CMakeFiles/client_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -310,10 +309,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GUI1_0.dir/DependInfo.cmake"
   "CMakeFiles/facedet.dir/DependInfo.cmake"
-  "CMakeFiles/server.dir/DependInfo.cmake"
   "CMakeFiles/client.dir/DependInfo.cmake"
   "CMakeFiles/GUI1_0_autogen.dir/DependInfo.cmake"
   "CMakeFiles/facedet_autogen.dir/DependInfo.cmake"
-  "CMakeFiles/server_autogen.dir/DependInfo.cmake"
   "CMakeFiles/client_autogen.dir/DependInfo.cmake"
   )

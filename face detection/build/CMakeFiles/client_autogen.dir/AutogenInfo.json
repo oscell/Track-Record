@@ -455,9 +455,7 @@
 		"/home/oscar/Desktop/Track-Record/face detection/build/GUI1_0_autogen/include/src/GUI/ui_mainwindow.h",
 		"/home/oscar/Desktop/Track-Record/face detection/build/GUI1_0_autogen/mocs_compilation.cpp",
 		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/include/src/GUI/ui_mainwindow.h",
-		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/mocs_compilation.cpp",
-		"/home/oscar/Desktop/Track-Record/face detection/build/server_autogen/include/src/GUI/ui_mainwindow.h",
-		"/home/oscar/Desktop/Track-Record/face detection/build/server_autogen/mocs_compilation.cpp"
+		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
@@ -482,9 +480,7 @@
 		"/home/oscar/Desktop/Track-Record/face detection/build/GUI1_0_autogen/include/src/GUI/ui_mainwindow.h",
 		"/home/oscar/Desktop/Track-Record/face detection/build/GUI1_0_autogen/mocs_compilation.cpp",
 		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/include/src/GUI/ui_mainwindow.h",
-		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/mocs_compilation.cpp",
-		"/home/oscar/Desktop/Track-Record/face detection/build/server_autogen/include/src/GUI/ui_mainwindow.h",
-		"/home/oscar/Desktop/Track-Record/face detection/build/server_autogen/mocs_compilation.cpp"
+		"/home/oscar/Desktop/Track-Record/face detection/build/facedet_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

@@ -188,19 +188,6 @@ facedet/fast:
 .PHONY : facedet/fast
 
 #=============================================================================
-# Target rules for targets named server
-
-# Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
-
-# fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-.PHONY : server/fast
-
-#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -238,19 +225,6 @@ facedet_autogen: cmake_check_build_system
 facedet_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet_autogen.dir/build.make CMakeFiles/facedet_autogen.dir/build
 .PHONY : facedet_autogen/fast
-
-#=============================================================================
-# Target rules for targets named server_autogen
-
-# Build rule for target.
-server_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_autogen
-.PHONY : server_autogen
-
-# fast build rule for target.
-server_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/build
-.PHONY : server_autogen/fast
 
 #=============================================================================
 # Target rules for targets named client_autogen
@@ -336,30 +310,6 @@ facedet_autogen/mocs_compilation.s: facedet_autogen/mocs_compilation.cpp.s
 facedet_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/facedet_autogen/mocs_compilation.cpp.s
 .PHONY : facedet_autogen/mocs_compilation.cpp.s
-
-server_autogen/mocs_compilation.o: server_autogen/mocs_compilation.cpp.o
-.PHONY : server_autogen/mocs_compilation.o
-
-# target to build an object file
-server_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o
-.PHONY : server_autogen/mocs_compilation.cpp.o
-
-server_autogen/mocs_compilation.i: server_autogen/mocs_compilation.cpp.i
-.PHONY : server_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-server_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.i
-.PHONY : server_autogen/mocs_compilation.cpp.i
-
-server_autogen/mocs_compilation.s: server_autogen/mocs_compilation.cpp.s
-.PHONY : server_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-server_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.s
-.PHONY : server_autogen/mocs_compilation.cpp.s
 
 src/GUI/main.o: src/GUI/main.cpp.o
 .PHONY : src/GUI/main.o
@@ -457,30 +407,6 @@ src/demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facedet.dir/build.make CMakeFiles/facedet.dir/src/demo.cpp.s
 .PHONY : src/demo.cpp.s
 
-src/server.o: src/server.cpp.o
-.PHONY : src/server.o
-
-# target to build an object file
-src/server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.o
-.PHONY : src/server.cpp.o
-
-src/server.i: src/server.cpp.i
-.PHONY : src/server.i
-
-# target to preprocess a source file
-src/server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.i
-.PHONY : src/server.cpp.i
-
-src/server.s: src/server.cpp.s
-.PHONY : src/server.s
-
-# target to generate assembly for a file
-src/server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
-.PHONY : src/server.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -496,11 +422,9 @@ help:
 	@echo "... GUI1_0_autogen"
 	@echo "... client_autogen"
 	@echo "... facedet_autogen"
-	@echo "... server_autogen"
 	@echo "... GUI1_0"
 	@echo "... client"
 	@echo "... facedet"
-	@echo "... server"
 	@echo "... GUI1_0_autogen/mocs_compilation.o"
 	@echo "... GUI1_0_autogen/mocs_compilation.i"
 	@echo "... GUI1_0_autogen/mocs_compilation.s"
@@ -510,9 +434,6 @@ help:
 	@echo "... facedet_autogen/mocs_compilation.o"
 	@echo "... facedet_autogen/mocs_compilation.i"
 	@echo "... facedet_autogen/mocs_compilation.s"
-	@echo "... server_autogen/mocs_compilation.o"
-	@echo "... server_autogen/mocs_compilation.i"
-	@echo "... server_autogen/mocs_compilation.s"
 	@echo "... src/GUI/main.o"
 	@echo "... src/GUI/main.i"
 	@echo "... src/GUI/main.s"
@@ -525,9 +446,6 @@ help:
 	@echo "... src/demo.o"
 	@echo "... src/demo.i"
 	@echo "... src/demo.s"
-	@echo "... src/server.o"
-	@echo "... src/server.i"
-	@echo "... src/server.s"
 .PHONY : help
 
 
