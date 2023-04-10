@@ -30,7 +30,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   - Connect the motors using the PinOut diagram: Pan at Gpio 18, Tilt at Gpio 17
 
 - Step 2: Software
-  - [Clone the repo](https://github.com/oscell/Track-Record.git)
+  - Clone the repo
   
   ```git
   git clone https://github.com/oscell/Track-Record.git
