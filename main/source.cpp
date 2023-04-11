@@ -60,7 +60,7 @@ void tilt(int angle, int prev_angle, int align)
 		pulse = (float)abs(((angle-prev_angle)*40.0)/180.0); // calculating pulse for change in angle (PWM)
 	}
 	
-	// Controlling the motor according to the pulse calculated above
+	// Controlling the motor according to the pulse calculated
 	for(i=0;i<pulse;i++)
 	{
 		bcm2835_gpio_set(17); // setting pin 17 to high
