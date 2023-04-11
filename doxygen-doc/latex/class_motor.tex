@@ -1,0 +1,91 @@
+\hypertarget{class_motor}{}\doxysection{Motor Class Reference}
+\label{class_motor}\index{Motor@{Motor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motor_aee2f563fc2ac84c92863a746ced1ee57}{Motor}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_motor}{Motor}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}{move}} (int angle)
+\begin{DoxyCompactList}\small\item\em Move the motor to a specified angle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_motor_a5caf49e09e9cd03dd3d3de09212e2e1f}{Motor}} (int gpio\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_motor}{Motor}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}{move}} (int angle)
+\begin{DoxyCompactList}\small\item\em Move the motor to a specified angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_motor_aee2f563fc2ac84c92863a746ced1ee57}\label{class_motor_aee2f563fc2ac84c92863a746ced1ee57}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{class_motor}{Motor}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & The G\+P\+IO pin number that the motor is connected to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_motor_a5caf49e09e9cd03dd3d3de09212e2e1f}\label{class_motor_a5caf49e09e9cd03dd3d3de09212e2e1f}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{int}]{gpio\+\_\+pin }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_motor}{Motor}} object. 
+
+This constructor initializes the B\+C\+M2835 library and sets up the motor on the specified G\+P\+IO pin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio\+\_\+pin} & The G\+P\+IO pin to which the motor is connected. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}\label{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}} 
+\index{Motor@{Motor}!move@{move}}
+\index{move@{move}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Motor\+::move (\begin{DoxyParamCaption}\item[{int}]{angle }\end{DoxyParamCaption})}
+
+
+
+Move the motor to a specified angle. 
+
+This function moves the motor to the specified angle by generating a P\+WM signal on the G\+P\+IO pin specified in the constructor using the B\+C\+M2835 library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The desired angle of rotation in degrees. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}\label{class_motor_aefa7bedc6c46c7b8c0374f75a3465bcc}} 
+\index{Motor@{Motor}!move@{move}}
+\index{move@{move}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Motor\+::move (\begin{DoxyParamCaption}\item[{int}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move the motor to a specified angle. 
+
+This function moves the motor to the specified angle by generating a P\+WM signal on the G\+P\+IO pin using the B\+C\+M2835 library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The desired angle of rotation in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+motor/move.\+cpp\item 
+motor/move.\+h\end{DoxyCompactItemize}
