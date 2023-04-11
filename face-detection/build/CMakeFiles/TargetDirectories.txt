@@ -1,0 +1,12 @@
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/GUI1_0.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/facedet.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/client.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/edit_cache.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/rebuild_cache.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/list_install_components.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/install.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/install/local.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/install/strip.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/GUI1_0_autogen.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/facedet_autogen.dir
+/home/oscar/Desktop/Track-Record/face detection/build/CMakeFiles/client_autogen.dir
