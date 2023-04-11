@@ -28,7 +28,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   - [Install the OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) and set up a display.*
   - [Connect the Pi camera](https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module)
   - Connect the motors using the PinOut diagram: Pan at Gpio 18, Tilt at Gpio 17
-  - 3D print the models from the Schematics and Solidworks directories
+  - 3D print the models -- Check the Schematics and Solidworks directories or build your own model
 
 - Step 2: Software
   - Make sure to have the latest compiler based on GCC/G++ or Clang/LLVM
@@ -37,6 +37,12 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   
   ```git
   git clone https://github.com/oscell/Track-Record.git
+  ```
+  
+  - Unpack the lib_package archive to /usr/include
+ 
+  ```bash
+  sudo tar -xf lib_package.tar.gz -C /usr/include
   ```
   
   - Create an executable in the main directory
