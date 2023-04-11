@@ -25,16 +25,29 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 
 ## Instructions
 - Step 1: Setting up the hardware
-  - [Install the OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) and set up a display.
+  - [Install the OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) and set up a display.*
   - [Connect the Pi camera](https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module)
   - Connect the motors using the PinOut diagram: Pan at Gpio 18, Tilt at Gpio 17
+  - 3D print the models from the Schematics and Solidworks directories
 
 - Step 2: Software
-  - Clone the repo
+  - Make sure to have the latest compiler based on GCC/G++ or Clang/LLVM
+  - [Setup cmake](https://cmake.org/download/) on your Raspberry Pi
+  - Clone the repo, the libraries used are included with the git package
   
   ```git
   git clone https://github.com/oscell/Track-Record.git
   ```
+  
+  - Create an executable in the main directory
+    - Open a terminal and navigate to the main directory
+    - Run the following commands to create the executable "tracknrecord"
+  
+    ```bash
+    cmake CMakeLists.txt
+    make
+    ```
+    - You should now see an executable named "tracknrecord" in the directory
   
   - Set executable permission to run on startup
     - Open a terminal and run the following commands
@@ -45,7 +58,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
     ```
     
     - Copy or type the following text into the "track.desktop" file.
-    - Replace the "directory" with the location of the executable named 'track' located in the source folder. (eg. home/pi/...)
+    - Replace the "directory" with the location of the executable named 'tracknrecord' located in the main folder. (eg. home/pi/...)
     
     ```bash
     [Desktop Entry]
@@ -61,9 +74,13 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
     sudo reboot
     ```
     
-   
-- Additonal useful information
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+## *Footnotes  
+  
+- Additonal information
   - [Raspberry Pi PinOut diagram](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
   - SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
   - Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
+
+
 
