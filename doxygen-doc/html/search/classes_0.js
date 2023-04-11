@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motor_3',['Motor',['../class_motor.html',1,'']]]
+  ['facedetection_8',['FaceDetection',['../class_face_detection.html',1,'']]]
 ];
