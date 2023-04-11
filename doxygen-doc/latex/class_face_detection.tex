@@ -14,11 +14,85 @@ The \mbox{\hyperlink{class_face_detection}{Face\+Detection}} class encapsulates 
 \mbox{\Hypertarget{class_face_detection_a9c5a278f5670e239f64fb5a6ee2b439d}\label{class_face_detection_a9c5a278f5670e239f64fb5a6ee2b439d}} 
 void \mbox{\hyperlink{class_face_detection_a9c5a278f5670e239f64fb5a6ee2b439d}{run}} ()
 \begin{DoxyCompactList}\small\item\em Captures frames from the webcam, detects faces and draws rectangles around them until the user presses \textquotesingle{}q\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_face_detection_a35ec1a199d8205327663dab41c92585c}{convert\+To\+Gray}} (const cv\+::\+Mat \&frame)
+\begin{DoxyCompactList}\small\item\em Converts the frame to grayscale. \end{DoxyCompactList}\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \mbox{\hyperlink{class_face_detection_a073470bee670a2d307536f715feb83d5}{detect\+Faces}} (const cv\+::\+Mat \&gray)
+\begin{DoxyCompactList}\small\item\em Detects faces in the grayscale image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_face_detection_abadca21eee8622b4a6b318b79d182d3c}{draw\+Faces}} (cv\+::\+Mat \&frame, const std\+::vector$<$ cv\+::\+Rect $>$ \&faces)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle around each face in the frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_face_detection_a247d5a46839505c806183da35392e96f}\label{class_face_detection_a247d5a46839505c806183da35392e96f}} 
+cv\+::\+Video\+Capture {\bfseries cap\+\_\+}
+\item 
+\mbox{\Hypertarget{class_face_detection_a7eea74e58a706b154e7776600a1054fc}\label{class_face_detection_a7eea74e58a706b154e7776600a1054fc}} 
+cv\+::\+Cascade\+Classifier {\bfseries face\+\_\+cascade\+\_\+}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The \mbox{\hyperlink{class_face_detection}{Face\+Detection}} class encapsulates the functionality of detecting faces from a webcam feed. 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_face_detection_a35ec1a199d8205327663dab41c92585c}\label{class_face_detection_a35ec1a199d8205327663dab41c92585c}} 
+\index{FaceDetection@{FaceDetection}!convertToGray@{convertToGray}}
+\index{convertToGray@{convertToGray}!FaceDetection@{FaceDetection}}
+\doxysubsubsection{\texorpdfstring{convertToGray()}{convertToGray()}}
+{\footnotesize\ttfamily cv\+::\+Mat Face\+Detection\+::convert\+To\+Gray (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Converts the frame to grayscale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The frame to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The grayscale version of the frame. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_detection_a073470bee670a2d307536f715feb83d5}\label{class_face_detection_a073470bee670a2d307536f715feb83d5}} 
+\index{FaceDetection@{FaceDetection}!detectFaces@{detectFaces}}
+\index{detectFaces@{detectFaces}!FaceDetection@{FaceDetection}}
+\doxysubsubsection{\texorpdfstring{detectFaces()}{detectFaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ cv\+::\+Rect $>$ Face\+Detection\+::detect\+Faces (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{gray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Detects faces in the grayscale image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gray} & The grayscale image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of rectangles representing the detected faces. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_detection_abadca21eee8622b4a6b318b79d182d3c}\label{class_face_detection_abadca21eee8622b4a6b318b79d182d3c}} 
+\index{FaceDetection@{FaceDetection}!drawFaces@{drawFaces}}
+\index{drawFaces@{drawFaces}!FaceDetection@{FaceDetection}}
+\doxysubsubsection{\texorpdfstring{drawFaces()}{drawFaces()}}
+{\footnotesize\ttfamily void Face\+Detection\+::draw\+Faces (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame,  }\item[{const std\+::vector$<$ cv\+::\+Rect $>$ \&}]{faces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a rectangle around each face in the frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The frame to draw on. \\
+\hline
+{\em faces} & A vector of rectangles representing the detected faces. \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-face detection/src/demo.\+cpp\end{DoxyCompactItemize}
+face-\/detection/src/demo.\+cpp\end{DoxyCompactItemize}

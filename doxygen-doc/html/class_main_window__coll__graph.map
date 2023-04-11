@@ -1,4 +1,6 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="10,80,117,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="31,171,138,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,121,108"/>
+<area shape="rect" id="node3" href="$class_ui_1_1_main_window.html" title=" " alt="" coords="146,81,274,108"/>
+<area shape="rect" id="node4" href="$class_ui___main_window.html" title=" " alt="" coords="147,5,273,32"/>
 </map>

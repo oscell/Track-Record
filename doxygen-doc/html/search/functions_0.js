@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['facedetection_13',['FaceDetection',['../class_face_detection.html#aebc37bd095ea30ba6ad341b0cbe3f7b9',1,'FaceDetection']]]
+  ['converttogray_17',['convertToGray',['../class_face_detection.html#a35ec1a199d8205327663dab41c92585c',1,'FaceDetection']]]
 ];

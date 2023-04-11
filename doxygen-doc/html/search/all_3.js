@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readme_5',['README',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['run_6',['run',['../class_face_detection.html#a9c5a278f5670e239f64fb5a6ee2b439d',1,'FaceDetection']]]
+  ['gpio_5fpin_5f_4',['gpio_pin_',['../class_motor.html#a33a63537d7cccf57cecee3ef80b41943',1,'Motor']]]
 ];
