@@ -11,10 +11,14 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,8 +27,16 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QVBoxLayout *mainLayout;
+    QLabel *logoLabel;
+    QHBoxLayout *videoFeedLayout;
+    QSpacerItem *horizontalSpacer;
+    QLabel *videoFeedLabel;
+    QSpacerItem *horizontalSpacer_2;
+    QHBoxLayout *buttonsLayout;
     QPushButton *pushButton;
     QPushButton *terminateButton;
+    QPushButton *startVideoFeedButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -35,12 +47,56 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        mainLayout = new QVBoxLayout(centralwidget);
+        mainLayout->setObjectName("mainLayout");
+        logoLabel = new QLabel(centralwidget);
+        logoLabel->setObjectName("logoLabel");
+        logoLabel->setPixmap(QPixmap(QString::fromUtf8("Logo.png")));
+        logoLabel->setAlignment(Qt::AlignCenter);
+
+        mainLayout->addWidget(logoLabel);
+
+        videoFeedLayout = new QHBoxLayout();
+        videoFeedLayout->setObjectName("videoFeedLayout");
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        videoFeedLayout->addItem(horizontalSpacer);
+
+        videoFeedLabel = new QLabel(centralwidget);
+        videoFeedLabel->setObjectName("videoFeedLabel");
+        videoFeedLabel->setFrameShape(QFrame::StyledPanel);
+        videoFeedLabel->setFrameShadow(QFrame::Sunken);
+        videoFeedLabel->setScaledContents(true);
+
+        videoFeedLayout->addWidget(videoFeedLabel);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        videoFeedLayout->addItem(horizontalSpacer_2);
+
+
+        mainLayout->addLayout(videoFeedLayout);
+
+        buttonsLayout = new QHBoxLayout();
+        buttonsLayout->setObjectName("buttonsLayout");
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(170, 110, 291, 71));
+
+        buttonsLayout->addWidget(pushButton);
+
         terminateButton = new QPushButton(centralwidget);
         terminateButton->setObjectName("terminateButton");
-        terminateButton->setGeometry(QRect(170, 200, 291, 71));
+
+        buttonsLayout->addWidget(terminateButton);
+
+        startVideoFeedButton = new QPushButton(centralwidget);
+        startVideoFeedButton->setObjectName("startVideoFeedButton");
+
+        buttonsLayout->addWidget(startVideoFeedButton);
+
+
+        mainLayout->addLayout(buttonsLayout);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -58,8 +114,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        videoFeedLabel->setText(QString());
         pushButton->setText(QCoreApplication::translate("MainWindow", "Start Executable", nullptr));
         terminateButton->setText(QCoreApplication::translate("MainWindow", "Terminate Executable", nullptr));
+        startVideoFeedButton->setText(QCoreApplication::translate("MainWindow", "Start Video Feed", nullptr));
     } // retranslateUi
 
 };

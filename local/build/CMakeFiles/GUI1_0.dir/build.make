@@ -125,10 +125,25 @@ GUI1_0: CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o
 GUI1_0: CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o
 GUI1_0: CMakeFiles/GUI1_0.dir/build.make
 GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Widgets.so.6.4.3
+GUI1_0: /usr/local/lib/libopencv_gapi.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_highgui.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_ml.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_objdetect.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_photo.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_stitching.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_video.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_videoio.so.4.7.0
 GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Gui.so.6.4.3
 GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Core.so.6.4.3
 GUI1_0: /usr/lib/x86_64-linux-gnu/libGLX.so
 GUI1_0: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+GUI1_0: /usr/local/lib/libopencv_imgcodecs.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_dnn.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_calib3d.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_features2d.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_flann.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_imgproc.so.4.7.0
+GUI1_0: /usr/local/lib/libopencv_core.so.4.7.0
 GUI1_0: CMakeFiles/GUI1_0.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GUI1_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GUI1_0.dir/link.txt --verbose=$(VERBOSE)
