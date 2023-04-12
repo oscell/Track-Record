@@ -1,0 +1,4 @@
+/home/oscar/Desktop/Track-Record_FINAL/main/build/CMakeFiles/tracknrecord.dir
+/home/oscar/Desktop/Track-Record_FINAL/main/build/CMakeFiles/client.dir
+/home/oscar/Desktop/Track-Record_FINAL/main/build/CMakeFiles/edit_cache.dir
+/home/oscar/Desktop/Track-Record_FINAL/main/build/CMakeFiles/rebuild_cache.dir
