@@ -61,11 +61,94 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Track-Record Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><img src="https://github.com/oscell/Track-Record/blob/5bf5b6f9409c1b4b8569f964b363590f647e12f0/Images/Logo_slogan.png" alt="test" class="inline"/></p>
+<ul>
+<li>This project demonstrates a face tracking system built on a Raspberry Pi 3B platform.</li>
+</ul>
+<p>Find us on <a href="https://twitter.com/TrackrecordTeam">Twitter</a> and <a href="https://www.instagram.com/_u/tracknrecordteam">Instagram</a> to stay up to date with any of the latest developements or email us at <a href="#" onclick="location.href='mai'+'lto:'+'tra'+'ck'+'nre'+'co'+'rdt'+'ea'+'m@g'+'ma'+'il.'+'co'+'m'; return false;">track<span style="display: none;">.nosp@m.</span>nrec<span style="display: none;">.nosp@m.</span>ordte<span style="display: none;">.nosp@m.</span>am@g<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>com</a> to get in touch.</p>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Hardware</h2>
+<p>The following electronic components were used to builf the project:</p><ul>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-3-model-b/">Raspberry Pi 3B</a></li>
+<li>[SD Card] - One with a memory capacity of 16 gigs or more.</li>
+<li><a href="https://www.raspberrypi.com/products/camera-module-v2/">Pi Camera module 2</a></li>
+<li><a href="https://www.towerpro.com.tw/product/sg92r-7/">SG92R Servo</a></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Software Dependencies</h2>
+<p>The following libraries were used throughout the project:</p><ul>
+<li><a href="https://cmake.org/download/">CMake</a></li>
+<li><a href="https://opencv.org/releases/">OpenCV</a></li>
+<li><a href="https://www.airspayce.com/mikem/bcm2835/index.html">BCM2835</a></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Installation and Usage</h2>
+<p>This project aims to build a standalone plug and play type product. Clip the camera of your choice to the platform, switch the power on and watch it track you. But wait there's more, you can build it on your own. Follow the instructions ahead.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Instructions</h2>
+<ul>
+<li>Step 1: Setting up the hardware<ul>
+<li><a href="https://www.raspberrypi.com/documentation/computers/getting-started.html">Install the OS</a> and set up a display.*</li>
+<li><a href="https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module">Connect the Pi camera</a></li>
+<li>Connect the motors using the PinOut diagram: Pan at Gpio 18, Tilt at Gpio 17</li>
+<li>3D print the models &ndash; Check the Schematics and Solidworks directories or build your own model</li>
+</ul>
+</li>
+<li>Step 2: Software<ul>
+<li>Make sure to have the latest compiler based on GCC/G++ or Clang/LLVM</li>
+<li><a href="https://cmake.org/download/">Setup cmake</a> on your Raspberry Pi</li>
+<li>Clone the repo, the libraries used are included with the git package</li>
+</ul>
+</li>
+</ul>
+<div class="fragment"><div class="line">git clone https://github.com/oscell/Track-Record.git</div>
+</div><!-- fragment --><ul>
+<li>Unpack the lib_package archive to /usr/include</li>
+</ul>
+<div class="fragment"><div class="line">sudo tar -xf lib_package.tar.gz -C /usr/include</div>
+</div><!-- fragment --><ul>
+<li><p class="startli">Create an executable in the main directory</p><ul>
+<li>Open a terminal and navigate to the main directory</li>
+<li>Run the following commands to create the executable "tracknrecord"</li>
+</ul>
+<p class="startli">```bash cmake CMakeLists.txt make ```</p><ul>
+<li>You should now see an executable named "tracknrecord" in the directory</li>
+</ul>
+</li>
+<li><p class="startli">Set executable permission to run on startup</p><ul>
+<li>Open a terminal and run the following commands</li>
+</ul>
+<p class="startli">```bash mkdir /home/pi/.config/autostart nano /home/pi/.config/autostart/track.desktop ```</p><ul>
+<li>Copy or type the following text into the "track.desktop" file.</li>
+<li>Replace the "directory" with the location of the executable named 'tracknrecord' located in the main folder. (eg. home/pi/...)</li>
+</ul>
+<p class="startli">```bash [Desktop Entry] Type=Application Name=Track Exec="directory" ```</p><ul>
+<li>Save the file using: Ctrl+X -&gt; Y</li>
+</ul>
+</li>
+</ul>
+<p>Step 3:</p><ul>
+<li>Reboot the Pi from the terminal and it is ready to go. ```bash sudo reboot ```</li>
+</ul>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md5"></a>
+*Footnotes</h2>
+<ul>
+<li>Additonal information<ul>
+<li><a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">Raspberry Pi PinOut diagram</a></li>
+<li>SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.</li>
+<li>Set up <a href="https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/">Raspberry Pi in headless mode</a> without a display and other hardware.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+GUI usage</h2>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
