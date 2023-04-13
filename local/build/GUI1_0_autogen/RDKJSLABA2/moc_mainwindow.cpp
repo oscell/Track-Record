@@ -31,7 +31,7 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata1[17];
     char stringdata2[1];
     char stringdata3[32];
-    char stringdata4[33];
+    char stringdata4[24];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -41,13 +41,13 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(11, 16),  // "displayVideoFeed"
         QT_MOC_LITERAL(28, 0),  // ""
         QT_MOC_LITERAL(29, 31),  // "on_startVideoFeedButton_clicked"
-        QT_MOC_LITERAL(61, 32)   // "on_toggleSendValueButton_clicked"
+        QT_MOC_LITERAL(61, 23)   // "Toggle_Tracking_clicked"
     },
     "MainWindow",
     "displayVideoFeed",
     "",
     "on_startVideoFeedButton_clicked",
-    "on_toggleSendValueButton_clicked"
+    "Toggle_Tracking_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -91,7 +91,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_startVideoFeedButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_toggleSendValueButton_clicked'
+        // method 'Toggle_Tracking_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -105,7 +105,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->displayVideoFeed(); break;
         case 1: _t->on_startVideoFeedButton_clicked(); break;
-        case 2: _t->on_toggleSendValueButton_clicked(); break;
+        case 2: _t->Toggle_Tracking_clicked(); break;
         default: ;
         }
     }

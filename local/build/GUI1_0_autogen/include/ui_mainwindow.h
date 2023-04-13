@@ -101,7 +101,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Track Record", nullptr));
         videoFeedLabel->setText(QString());
         toggleSendValueButton->setText(QCoreApplication::translate("MainWindow", "Start Tracking", nullptr));
         startVideoFeedButton->setText(QCoreApplication::translate("MainWindow", "Start Video Feed", nullptr));
