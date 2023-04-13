@@ -26,7 +26,7 @@ class movement
 		}
 		else
 		{
-			pulse = (float)abs(((angle-prev_angle)*40.0)/180.0); // Calculating pulse required
+			pulse = (float)abs(((angle-prev_angle)*40.0)/180.0); // Calculating the pulse required
 		}
 	
 		// Controlling the motor according to the pulse calculated above
