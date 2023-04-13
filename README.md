@@ -88,5 +88,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   - SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
   - Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
 
+## GUI usage
+
 
 
