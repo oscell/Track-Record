@@ -2,6 +2,8 @@
 
 - This project demonstrates a face tracking system built on a Raspberry Pi 3B platform.
 
+The full documentation can be found [here](https://tduggan63.github.io/Track-Record/index.html).
+
 Find us on [Twitter](https://twitter.com/TrackrecordTeam) and [Instagram](https://www.instagram.com/_u/tracknrecordteam) to stay up to date with any of the latest developements or email us at tracknrecordteam@gmail.com to get in touch.
 
 
