@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['angle_22',['angle',['../classmovement.html#af496a14568609cadfcfe555a5af6ea18',1,'movement']]]
+  ['previous_5fangles_13',['previous_angles',['../classrecognition.html#a9dcd2bbd51f9ff698da6e5f4ec2c1bfa',1,'recognition']]]
 ];

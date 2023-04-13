@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "aimoprstv",
+  0: "mprtv",
   1: "mr",
   2: "ptv",
-  3: "aiopst"
+  3: "p"
 };
 
 var indexSectionNames =

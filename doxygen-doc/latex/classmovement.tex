@@ -7,8 +7,7 @@ Class to control pan-\/tilt camera movement using Raspberry Pi G\+P\+IO.
 
 
 
-Inheritance diagram for movement\+:
-\nopagebreak
+Inheritance diagram for movement\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,25 +17,10 @@ Inheritance diagram for movement\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classmovement_ad2a5ef98cbf15b4b56f8f63ec4c917fb}{pan}} (int \mbox{\hyperlink{classmovement_af496a14568609cadfcfe555a5af6ea18}{angle}}, int prev\+\_\+angle, int align)
-\begin{DoxyCompactList}\small\item\em Function to move the pan motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-float \mbox{\hyperlink{classmovement_a48f3d3755d122687647c122ef4ce4f1c}{pulse}}
-\item 
-int \mbox{\hyperlink{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}{i}}
-\item 
-int \mbox{\hyperlink{classmovement_af496a14568609cadfcfe555a5af6ea18}{angle}}
-\item 
-float \mbox{\hyperlink{classmovement_a5861bbadc2f55afcc003d97749b603f3}{on\+\_\+time}} = 10.\+3$\ast$\mbox{\hyperlink{classmovement_af496a14568609cadfcfe555a5af6ea18}{angle}}+546
-\item 
-\mbox{\Hypertarget{classmovement_a8d5b2046a99e5ab08773a569f975b926}\label{classmovement_a8d5b2046a99e5ab08773a569f975b926}} 
-pubic {\bfseries \+\_\+\+\_\+pad0\+\_\+\+\_\+}\+:void tilt(int \mbox{\hyperlink{classmovement_af496a14568609cadfcfe555a5af6ea18}{angle}}
-\item 
-\mbox{\Hypertarget{classmovement_ac062b9954eacb32c9b1162f9c5489e56}\label{classmovement_ac062b9954eacb32c9b1162f9c5489e56}} 
-pubic int {\bfseries prev\+\_\+angle}
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classmovement_ad2a5ef98cbf15b4b56f8f63ec4c917fb}{pan}} (int angle, int prev\+\_\+angle, int align)
+\begin{DoxyCompactList}\small\item\em Function to move the pan motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_a6e85a6a5158da107adf49d252c8c6318}{tilt}} (int angle, int prev\+\_\+angle, int align)
+\begin{DoxyCompactList}\small\item\em Function to move the tilt motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -66,35 +50,29 @@ This function takes the desired angle, previous angle, and alignment information
 {\em align} & Alignment information (0 or 1) \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classmovement_a6e85a6a5158da107adf49d252c8c6318}\label{classmovement_a6e85a6a5158da107adf49d252c8c6318}} 
+\index{movement@{movement}!tilt@{tilt}}
+\index{tilt@{tilt}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{tilt()}{tilt()}}
+{\footnotesize\ttfamily void movement\+::tilt (\begin{DoxyParamCaption}\item[{int}]{angle,  }\item[{int}]{prev\+\_\+angle,  }\item[{int}]{align }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classmovement_af496a14568609cadfcfe555a5af6ea18}\label{classmovement_af496a14568609cadfcfe555a5af6ea18}} 
-\index{movement@{movement}!angle@{angle}}
-\index{angle@{angle}!movement@{movement}}
-\doxysubsubsection{\texorpdfstring{angle}{angle}}
-{\footnotesize\ttfamily int movement\+::angle}
 
-Current angle of the motor \mbox{\Hypertarget{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}\label{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}} 
-\index{movement@{movement}!i@{i}}
-\index{i@{i}!movement@{movement}}
-\doxysubsubsection{\texorpdfstring{i}{i}}
-{\footnotesize\ttfamily int movement\+::i}
+Function to move the tilt motor. 
 
-Counter variable \mbox{\Hypertarget{classmovement_a5861bbadc2f55afcc003d97749b603f3}\label{classmovement_a5861bbadc2f55afcc003d97749b603f3}} 
-\index{movement@{movement}!on\_time@{on\_time}}
-\index{on\_time@{on\_time}!movement@{movement}}
-\doxysubsubsection{\texorpdfstring{on\_time}{on\_time}}
-{\footnotesize\ttfamily float movement\+::on\+\_\+time = 10.\+3$\ast$\mbox{\hyperlink{classmovement_af496a14568609cadfcfe555a5af6ea18}{angle}}+546}
+This function takes the desired angle, previous angle, and alignment information as input and calculates the pulse required to move the motor. It then sends signals to the motor using the bcm2835 library to move it to the desired angle.
 
-On-\/time required to send signal to the motor \mbox{\Hypertarget{classmovement_a48f3d3755d122687647c122ef4ce4f1c}\label{classmovement_a48f3d3755d122687647c122ef4ce4f1c}} 
-\index{movement@{movement}!pulse@{pulse}}
-\index{pulse@{pulse}!movement@{movement}}
-\doxysubsubsection{\texorpdfstring{pulse}{pulse}}
-{\footnotesize\ttfamily float movement\+::pulse}
 
-Pulse required to move the motor in degrees 
+\begin{DoxyParams}{Parameters}
+{\em angle} & Desired angle of the motor \\
+\hline
+{\em prev\+\_\+angle} & Previous angle of the motor \\
+\hline
+{\em align} & Alignment information (0 or 1) \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-main\+\_\+refactor/source.\+cpp\end{DoxyCompactItemize}
+main/source.\+cpp\end{DoxyCompactItemize}
