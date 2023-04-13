@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classrecognition-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">recognition Class Reference</div>  </div>
@@ -94,7 +95,7 @@ Collaboration diagram for recognition:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a116276aa8a501ff9f9b6be913c56a008"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a116276aa8a501ff9f9b6be913c56a008">track</a> (int x_face_centr, int y_face_centr, int x_frame_centr, int y_frame_centr, int flag, int prev_pan_angle, int prev_tilt_angle)</td></tr>
+<tr class="memitem:a116276aa8a501ff9f9b6be913c56a008"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a116276aa8a501ff9f9b6be913c56a008">track</a> (int x_face_centr, int y_face_centr, int x_frame_centr, int y_frame_centr, int <a class="el" href="classrecognition.html#a25ab5cb3ee53c7ccb3d4135ba012ef4b">flag</a>, int <a class="el" href="classrecognition.html#a6c9a970a0039c707f6d616791bb9c4b8">prev_pan_angle</a>, int <a class="el" href="classrecognition.html#afefc16d7d3271da862597b338429cc41">prev_tilt_angle</a>)</td></tr>
 <tr class="memdesc:a116276aa8a501ff9f9b6be913c56a008"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tracks the face based on conditions.  <a href="classrecognition.html#a116276aa8a501ff9f9b6be913c56a008">More...</a><br /></td></tr>
 <tr class="separator:a116276aa8a501ff9f9b6be913c56a008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f6ed271fb2928149ed1fb3ad80fb6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a00f6ed271fb2928149ed1fb3ad80fb6e">vision</a> ()</td></tr>
@@ -112,6 +113,23 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9dcd2bbd51f9ff698da6e5f4ec2c1bfa"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a9dcd2bbd51f9ff698da6e5f4ec2c1bfa">previous_angles</a></td></tr>
 <tr class="separator:a9dcd2bbd51f9ff698da6e5f4ec2c1bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4f72a031c6cc0ec36203ca28f3169c10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a4f72a031c6cc0ec36203ca28f3169c10">increment</a> = 3</td></tr>
+<tr class="separator:a4f72a031c6cc0ec36203ca28f3169c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c78e32d0dfe075b980a32c8b79cbbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a73c78e32d0dfe075b980a32c8b79cbbc">start_angle</a> = 90</td></tr>
+<tr class="separator:a73c78e32d0dfe075b980a32c8b79cbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339f4aaed15a0e17925adab680f59ad2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a339f4aaed15a0e17925adab680f59ad2">pan_angle</a> = 90</td></tr>
+<tr class="separator:a339f4aaed15a0e17925adab680f59ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6db0bc2057fb1c1f9fe0a79ae0795f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#af6db0bc2057fb1c1f9fe0a79ae0795f2">tilt_angle</a> = 90</td></tr>
+<tr class="separator:af6db0bc2057fb1c1f9fe0a79ae0795f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ab5cb3ee53c7ccb3d4135ba012ef4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a25ab5cb3ee53c7ccb3d4135ba012ef4b">flag</a> = 0</td></tr>
+<tr class="separator:a25ab5cb3ee53c7ccb3d4135ba012ef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9a970a0039c707f6d616791bb9c4b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#a6c9a970a0039c707f6d616791bb9c4b8">prev_pan_angle</a> = 0</td></tr>
+<tr class="separator:a6c9a970a0039c707f6d616791bb9c4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefc16d7d3271da862597b338429cc41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecognition.html#afefc16d7d3271da862597b338429cc41">prev_tilt_angle</a> = 0</td></tr>
+<tr class="separator:afefc16d7d3271da862597b338429cc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class inherits from the movement class and contains functions for face tracking and detection. </p>
@@ -227,6 +245,121 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a25ab5cb3ee53c7ccb3d4135ba012ef4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ab5cb3ee53c7ccb3d4135ba012ef4b">&#9670;&nbsp;</a></span>flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::flag = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterator </p>
+
+</div>
+</div>
+<a id="a4f72a031c6cc0ec36203ca28f3169c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f72a031c6cc0ec36203ca28f3169c10">&#9670;&nbsp;</a></span>increment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::increment = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Increment to be added in pan/tilt angles </p>
+
+</div>
+</div>
+<a id="a339f4aaed15a0e17925adab680f59ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339f4aaed15a0e17925adab680f59ad2">&#9670;&nbsp;</a></span>pan_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::pan_angle = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pan angle of the motor </p>
+
+</div>
+</div>
+<a id="a6c9a970a0039c707f6d616791bb9c4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9a970a0039c707f6d616791bb9c4b8">&#9670;&nbsp;</a></span>prev_pan_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::prev_pan_angle = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Previous pan angle of the motor </p>
+
+</div>
+</div>
+<a id="afefc16d7d3271da862597b338429cc41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afefc16d7d3271da862597b338429cc41">&#9670;&nbsp;</a></span>prev_tilt_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::prev_tilt_angle = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Previous tilt angle of the motor </p>
+
+</div>
+</div>
 <a id="a9dcd2bbd51f9ff698da6e5f4ec2c1bfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9dcd2bbd51f9ff698da6e5f4ec2c1bfa">&#9670;&nbsp;</a></span>previous_angles</h2>
 
@@ -239,6 +372,52 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Vector storing the previous pan and tilt angles </p>
+
+</div>
+</div>
+<a id="a73c78e32d0dfe075b980a32c8b79cbbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c78e32d0dfe075b980a32c8b79cbbc">&#9670;&nbsp;</a></span>start_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::start_angle = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Starting angle of the motor </p>
+
+</div>
+</div>
+<a id="af6db0bc2057fb1c1f9fe0a79ae0795f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6db0bc2057fb1c1f9fe0a79ae0795f2">&#9670;&nbsp;</a></span>tilt_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recognition::tilt_angle = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tilt angle of the motor </p>
 
 </div>
 </div>

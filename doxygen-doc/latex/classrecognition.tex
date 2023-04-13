@@ -26,7 +26,7 @@ Collaboration diagram for recognition\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ int $>$ \mbox{\hyperlink{classrecognition_a116276aa8a501ff9f9b6be913c56a008}{track}} (int x\+\_\+face\+\_\+centr, int y\+\_\+face\+\_\+centr, int x\+\_\+frame\+\_\+centr, int y\+\_\+frame\+\_\+centr, int flag, int prev\+\_\+pan\+\_\+angle, int prev\+\_\+tilt\+\_\+angle)
+vector$<$ int $>$ \mbox{\hyperlink{classrecognition_a116276aa8a501ff9f9b6be913c56a008}{track}} (int x\+\_\+face\+\_\+centr, int y\+\_\+face\+\_\+centr, int x\+\_\+frame\+\_\+centr, int y\+\_\+frame\+\_\+centr, int \mbox{\hyperlink{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}{flag}}, int \mbox{\hyperlink{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}{prev\+\_\+pan\+\_\+angle}}, int \mbox{\hyperlink{classrecognition_afefc16d7d3271da862597b338429cc41}{prev\+\_\+tilt\+\_\+angle}})
 \begin{DoxyCompactList}\small\item\em This function tracks the face based on conditions. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classrecognition_a00f6ed271fb2928149ed1fb3ad80fb6e}{vision}} ()
 \begin{DoxyCompactList}\small\item\em This function tracks the movement and orientation of the face in real-\/time using a webcam. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -34,6 +34,23 @@ int \mbox{\hyperlink{classrecognition_a00f6ed271fb2928149ed1fb3ad80fb6e}{vision}
 \begin{DoxyCompactItemize}
 \item 
 vector$<$ int $>$ \mbox{\hyperlink{classrecognition_a9dcd2bbd51f9ff698da6e5f4ec2c1bfa}{previous\+\_\+angles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}{increment}} = 3
+\item 
+int \mbox{\hyperlink{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}{start\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_a339f4aaed15a0e17925adab680f59ad2}{pan\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}{tilt\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}{flag}} = 0
+\item 
+int \mbox{\hyperlink{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}{prev\+\_\+pan\+\_\+angle}} = 0
+\item 
+int \mbox{\hyperlink{classrecognition_afefc16d7d3271da862597b338429cc41}{prev\+\_\+tilt\+\_\+angle}} = 0
 \end{DoxyCompactItemize}
 
 
@@ -89,13 +106,55 @@ This function initializes the webcam, loads the face detection model, captures f
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classrecognition_a9dcd2bbd51f9ff698da6e5f4ec2c1bfa}\label{classrecognition_a9dcd2bbd51f9ff698da6e5f4ec2c1bfa}} 
+\mbox{\Hypertarget{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}\label{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}} 
+\index{recognition@{recognition}!flag@{flag}}
+\index{flag@{flag}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int recognition\+::flag = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Iterator \mbox{\Hypertarget{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}\label{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}} 
+\index{recognition@{recognition}!increment@{increment}}
+\index{increment@{increment}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{increment}{increment}}
+{\footnotesize\ttfamily int recognition\+::increment = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+Increment to be added in pan/tilt angles \mbox{\Hypertarget{classrecognition_a339f4aaed15a0e17925adab680f59ad2}\label{classrecognition_a339f4aaed15a0e17925adab680f59ad2}} 
+\index{recognition@{recognition}!pan\_angle@{pan\_angle}}
+\index{pan\_angle@{pan\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{pan\_angle}{pan\_angle}}
+{\footnotesize\ttfamily int recognition\+::pan\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Pan angle of the motor \mbox{\Hypertarget{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}\label{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}} 
+\index{recognition@{recognition}!prev\_pan\_angle@{prev\_pan\_angle}}
+\index{prev\_pan\_angle@{prev\_pan\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{prev\_pan\_angle}{prev\_pan\_angle}}
+{\footnotesize\ttfamily int recognition\+::prev\+\_\+pan\+\_\+angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous pan angle of the motor \mbox{\Hypertarget{classrecognition_afefc16d7d3271da862597b338429cc41}\label{classrecognition_afefc16d7d3271da862597b338429cc41}} 
+\index{recognition@{recognition}!prev\_tilt\_angle@{prev\_tilt\_angle}}
+\index{prev\_tilt\_angle@{prev\_tilt\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{prev\_tilt\_angle}{prev\_tilt\_angle}}
+{\footnotesize\ttfamily int recognition\+::prev\+\_\+tilt\+\_\+angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous tilt angle of the motor \mbox{\Hypertarget{classrecognition_a9dcd2bbd51f9ff698da6e5f4ec2c1bfa}\label{classrecognition_a9dcd2bbd51f9ff698da6e5f4ec2c1bfa}} 
 \index{recognition@{recognition}!previous\_angles@{previous\_angles}}
 \index{previous\_angles@{previous\_angles}!recognition@{recognition}}
 \doxysubsubsection{\texorpdfstring{previous\_angles}{previous\_angles}}
 {\footnotesize\ttfamily vector$<$int$>$ recognition\+::previous\+\_\+angles}
 
-Vector storing the previous pan and tilt angles 
+Vector storing the previous pan and tilt angles \mbox{\Hypertarget{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}\label{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}} 
+\index{recognition@{recognition}!start\_angle@{start\_angle}}
+\index{start\_angle@{start\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{start\_angle}{start\_angle}}
+{\footnotesize\ttfamily int recognition\+::start\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Starting angle of the motor \mbox{\Hypertarget{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}\label{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}} 
+\index{recognition@{recognition}!tilt\_angle@{tilt\_angle}}
+\index{tilt\_angle@{tilt\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{tilt\_angle}{tilt\_angle}}
+{\footnotesize\ttfamily int recognition\+::tilt\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Tilt angle of the motor 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

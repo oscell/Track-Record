@@ -21,6 +21,15 @@ void \mbox{\hyperlink{classmovement_ad2a5ef98cbf15b4b56f8f63ec4c917fb}{pan}} (in
 \begin{DoxyCompactList}\small\item\em Function to move the pan motor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classmovement_a6e85a6a5158da107adf49d252c8c6318}{tilt}} (int angle, int prev\+\_\+angle, int align)
 \begin{DoxyCompactList}\small\item\em Function to move the tilt motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classmovement_a48f3d3755d122687647c122ef4ce4f1c}{pulse}}
+\item 
+int \mbox{\hyperlink{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}{i}}
+\item 
+float \mbox{\hyperlink{classmovement_a5861bbadc2f55afcc003d97749b603f3}{on\+\_\+time}} = 10.\+3$\ast$angle+546
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -72,6 +81,27 @@ This function takes the desired angle, previous angle, and alignment information
 \hline
 \end{DoxyParams}
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}\label{classmovement_ac3fc24fb118d2464f651f97bf4b696e3}} 
+\index{movement@{movement}!i@{i}}
+\index{i@{i}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int movement\+::i\hspace{0.3cm}{\ttfamily [private]}}
+
+Counter variable \mbox{\Hypertarget{classmovement_a5861bbadc2f55afcc003d97749b603f3}\label{classmovement_a5861bbadc2f55afcc003d97749b603f3}} 
+\index{movement@{movement}!on\_time@{on\_time}}
+\index{on\_time@{on\_time}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{on\_time}{on\_time}}
+{\footnotesize\ttfamily float movement\+::on\+\_\+time = 10.\+3$\ast$angle+546\hspace{0.3cm}{\ttfamily [private]}}
+
+On-\/time required to send signal to the motor \mbox{\Hypertarget{classmovement_a48f3d3755d122687647c122ef4ce4f1c}\label{classmovement_a48f3d3755d122687647c122ef4ce4f1c}} 
+\index{movement@{movement}!pulse@{pulse}}
+\index{pulse@{pulse}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{pulse}{pulse}}
+{\footnotesize\ttfamily float movement\+::pulse\hspace{0.3cm}{\ttfamily [private]}}
+
+Pulse required to move the motor in degrees. Float because pulse for 3 degree angle is too small for an integer typecast 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
