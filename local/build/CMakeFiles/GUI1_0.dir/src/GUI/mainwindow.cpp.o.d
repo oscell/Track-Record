@@ -557,4 +557,6 @@ CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o: \
  /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/QTextStream \
- /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtextstream.h
+ /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/QStyle \
+ /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qstyle.h

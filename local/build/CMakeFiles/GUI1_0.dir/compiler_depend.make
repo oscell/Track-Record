@@ -1733,7 +1733,9 @@ CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o: ../src/GUI/mainwindow.cpp \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
   /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/QTextStream \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtextstream.h
+  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtextstream.h \
+  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/QStyle \
+  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qstyle.h
 
 
 /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/QTextStream:
@@ -2165,6 +2167,8 @@ GUI1_0_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qfontinfo.h:
+
+/home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qstyle.h:
 
 /usr/include/c++/11/memory:
 
@@ -2883,6 +2887,8 @@ GUI1_0_autogen/mocs_compilation.cpp:
 /usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
+
+/home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/QStyle:
 
 /usr/local/include/opencv4/opencv2/flann/heap.h:
 

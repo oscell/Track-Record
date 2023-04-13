@@ -27,15 +27,13 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *mainLayout;
-    QLabel *logoLabel;
-    QHBoxLayout *videoFeedLayout;
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
     QLabel *videoFeedLabel;
     QSpacerItem *horizontalSpacer_2;
-    QHBoxLayout *buttonsLayout;
-    QPushButton *pushButton;
-    QPushButton *terminateButton;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *toggleSendValueButton;
     QPushButton *startVideoFeedButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -47,55 +45,45 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        mainLayout = new QVBoxLayout(centralwidget);
-        mainLayout->setObjectName("mainLayout");
-        logoLabel = new QLabel(centralwidget);
-        logoLabel->setObjectName("logoLabel");
-        logoLabel->setPixmap(QPixmap(QString::fromUtf8("Logo.png")));
-        logoLabel->setAlignment(Qt::AlignCenter);
-
-        mainLayout->addWidget(logoLabel);
-
-        videoFeedLayout = new QHBoxLayout();
-        videoFeedLayout->setObjectName("videoFeedLayout");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        videoFeedLayout->addItem(horizontalSpacer);
+        horizontalLayout->addItem(horizontalSpacer);
 
         videoFeedLabel = new QLabel(centralwidget);
         videoFeedLabel->setObjectName("videoFeedLabel");
+        videoFeedLabel->setMinimumSize(QSize(640, 480));
+        videoFeedLabel->setMaximumSize(QSize(640, 480));
         videoFeedLabel->setFrameShape(QFrame::StyledPanel);
         videoFeedLabel->setFrameShadow(QFrame::Sunken);
         videoFeedLabel->setScaledContents(true);
 
-        videoFeedLayout->addWidget(videoFeedLabel);
+        horizontalLayout->addWidget(videoFeedLabel);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        videoFeedLayout->addItem(horizontalSpacer_2);
+        horizontalLayout->addItem(horizontalSpacer_2);
 
 
-        mainLayout->addLayout(videoFeedLayout);
+        verticalLayout->addLayout(horizontalLayout);
 
-        buttonsLayout = new QHBoxLayout();
-        buttonsLayout->setObjectName("buttonsLayout");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        toggleSendValueButton = new QPushButton(centralwidget);
+        toggleSendValueButton->setObjectName("toggleSendValueButton");
 
-        buttonsLayout->addWidget(pushButton);
-
-        terminateButton = new QPushButton(centralwidget);
-        terminateButton->setObjectName("terminateButton");
-
-        buttonsLayout->addWidget(terminateButton);
+        horizontalLayout_2->addWidget(toggleSendValueButton);
 
         startVideoFeedButton = new QPushButton(centralwidget);
         startVideoFeedButton->setObjectName("startVideoFeedButton");
 
-        buttonsLayout->addWidget(startVideoFeedButton);
+        horizontalLayout_2->addWidget(startVideoFeedButton);
 
 
-        mainLayout->addLayout(buttonsLayout);
+        verticalLayout->addLayout(horizontalLayout_2);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -115,8 +103,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         videoFeedLabel->setText(QString());
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Start Executable", nullptr));
-        terminateButton->setText(QCoreApplication::translate("MainWindow", "Terminate Executable", nullptr));
+        toggleSendValueButton->setText(QCoreApplication::translate("MainWindow", "Start Tracking", nullptr));
         startVideoFeedButton->setText(QCoreApplication::translate("MainWindow", "Start Video Feed", nullptr));
     } // retranslateUi
 
