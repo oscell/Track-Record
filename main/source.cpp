@@ -9,15 +9,34 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/ocl.hpp>
 
-
+/**
+ * @class movement
+ * @brief Class to control pan-tilt camera movement using Raspberry Pi GPIO
+ *
+ * This class provides functions to move the pan and tilt motors of a camera connected to
+ * Raspberry Pi using the bcm2835 library to control the GPIO pins. The class also includes
+ * variables to calculate the pulse and on-time required to send signals to the motors.
+ *
+ */
 class movement 
 {
 	private:
-     	float pulse; // float because pulse for 3 degree angle is too small for an integer typecast
-	int i;
-	float on_time = 10.3*angle+546; // On time for sending data to motors
+     	float pulse; /**< Pulse required to move the motor in degrees. Float because pulse for 3 degree angle is too small for an integer typecast */
+	int i; /**< Counter variable */
+	float on_time = 10.3*angle+546; /**< On-time required to send signal to the motor */
 
 	public:
+		/**
+         * @brief Function to move the pan motor
+         *
+         * This function takes the desired angle, previous angle, and alignment information
+         * as input and calculates the pulse required to move the motor. It then sends signals
+         * to the motor using the bcm2835 library to move it to the desired angle.
+         *
+         * @param angle Desired angle of the motor
+         * @param prev_angle Previous angle of the motor
+         * @param align Alignment information (0 or 1)
+         */
 	void pan(int angle, int prev_angle, int align) // Function for moving the pan motor connected at pin 18 
 	{
 		if (align==1)
@@ -40,6 +59,18 @@ class movement
 	}
 
 	public:
+		/**
+    * @brief Function to move the tilt motor
+    *
+    * This function takes the desired angle, previous angle, and alignment information
+    * as input and calculates the pulse required to move the motor. It then sends signals
+    * to the motor using the bcm2835 library to move it to the desired angle.
+    *
+    * @param angle Desired angle of the motor
+    * @param prev_angle Previous angle of the motor
+    * @param align Alignment information (0 or 1)
+    */
+
 	void tilt(int angle, int prev_angle, int align) // Function for moving the tilt motor connected at pin 17
 	{	
 		if (align==1)
@@ -62,21 +93,34 @@ class movement
 	}
 };
 
-
+/**
+ * @class recognition
+ * @brief This class inherits from the movement class and contains functions for face tracking and detection.
+ */
 class recognition : public movement
 {
 	private:
-	int increment = 3;
-	int start_angle = 90;
-	int pan_angle = 90;
-	int tilt_angle = 90;
-	int flag  = 0;
-	int prev_pan_angle = 0;
-	int prev_tilt_angle = 0;
+	int increment = 3; /**< Increment to be added in pan/tilt angles */
+	int start_angle = 90; /**< Starting angle of the motor */
+	int pan_angle = 90; /**< Pan angle of the motor */
+	int tilt_angle = 90; /**< Tilt angle of the motor */
+	int flag  = 0; /**< Iterator */
+	int prev_pan_angle = 0;  /**< Previous pan angle of the motor */
+	int prev_tilt_angle = 0; /**< Previous tilt angle of the motor */
 	
 	public:
-	vector<int> previous_angles;
-
+	vector<int> previous_angles; /**< Vector storing the previous pan and tilt angles */
+    /**
+     * @brief This function tracks the face based on conditions.
+     * @param x_face_centr X-coordinate of the face centroid
+     * @param y_face_centr Y-coordinate of the face centroid
+     * @param x_frame_centr X-coordinate of the frame centroid
+     * @param y_frame_centr Y-coordinate of the frame centroid
+     * @param itr Iterator
+     * @param prev_pan_angle Previous pan angle of the motor
+     * @param prev_tilt_angle Previous tilt angle of the motor
+     * @return A vector containing previous pan and tilt angles.
+     */
 	// Tracking the face based on conditions
 	vector<int> track(int x_face_centr, int y_face_centr, int x_frame_centr, int y_frame_centr, int flag, int prev_pan_angle, int prev_tilt_angle)
 	{
@@ -152,7 +196,14 @@ class recognition : public movement
 	vector<int> previous_angles = {prev_pan_angle, prev_tilt_angle};
 	return previous_angles;
 }
-
+    /**
+     * @brief This function tracks the movement and orientation of the face in real-time using a webcam.
+     *
+     * This function initializes the webcam, loads the face detection model, captures frames from the webcam,
+     * detects faces in the captured frames, and tracks the movement and orientation of the detected faces.
+     *
+     * @return 0 if the tracking was successful, -1 if there was an error.
+     */
 	int vision()
 	{
 		previous_angles = {prev_pan_angle, prev_tilt_angle};
@@ -222,7 +273,22 @@ class recognition : public movement
 	}
 };
 
+/**
 
+@brief Main function to run motor and vision control
+
+This function initializes the BCM2835 library and connects to the motor.
+
+It sets pin 17 and pin 18 as output for motor control.
+
+Then it sets the Pan motor and Tilt motor at 90 degrees as the starting pose
+
+by calling the respective functions of the recognition object.
+
+Finally, it calls the vision function of the recognition object.
+
+@return 0 on success
+*/
 int main()
 {
 	recognition obj;
