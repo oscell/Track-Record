@@ -1,0 +1,64 @@
+/* Window style */
+QMainWindow {
+    background-color: #201111;
+}
+
+/* Start Executable button style */
+QPushButton#toggleSendValueButton[trackingActive="false"]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+QPushButton#toggleSendValueButton[trackingActive="false"]:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Terminate Executable button style */
+QPushButton#toggleSendValueButton[trackingActive="true"] {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+QPushButton#toggleSendValueButton[trackingActive="true"]:hover {
+    background-color: #e35c5c;
+    color: white;
+}
+
+/* Video feed button style */
+QPushButton#startVideoFeedButton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+QPushButton#startVideoFeedButton[videoFeedActive="false"] {
+    background-color: #2196F3 !important;
+}
+
+QPushButton#startVideoFeedButton[videoFeedActive="true"] {
+    background-color: #f32156 !important;
+}
+
+
+/* Button click animation */
+QPushButton:pressed {
+    padding-left: 2px;
+    padding-top: 2px;
+}
