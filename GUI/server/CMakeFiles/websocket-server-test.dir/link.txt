@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/websocket-server-test.dir/test/tests.cpp.o CMakeFiles/websocket-server-test.dir/test/WSTest.cpp.o -o websocket-server-test  libwebsocket-server-lib.a /usr/local/lib/oatpp-1.3.0/liboatpp-websocket.a /usr/local/lib/oatpp-1.3.0/liboatpp-test.a /usr/local/lib/oatpp-1.3.0/liboatpp.a -latomic 
