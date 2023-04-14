@@ -100,19 +100,36 @@ The GUI is built using Qt5. To find the path of your Qt5 installation, you can r
 find / -iname Qt5Config.cmake 2>/dev/null
 ```
 
-Once you have the path, you can update your CMakeLists.txt file with the correct Qt5_DIR.
+Once you have the path, you can update the /local/CMakeLists.txt file with the correct Qt5_DIR.
 
 ```cmake
 set(Qt5_DIR "/path/to/Qt5/lib/cmake/Qt5")
 ```
 
+The comunication with the raspberry pi is done through a server. To find the IP adress of the raspery pi run in the raspberry pi terminal:
+
+```bash
+hostname -I
+```
+In `/local/src/GUI/main.cpp` change:
+```c++
+QString serverAddress = "127.0.0.1";
+```
+
+to
+
+```c++
+QString serverAddress = "<raspberry_pi_ip>"
+```
+
 ## Usage
 
 
-1. The comunication with the raspberry pi is done through a server. Before being able to run send command the server must be initialised.
+1. Before being able to run send command the server must be initialised.
 
 ```bash
-./main_refactor/build/server 
+cd /main_refactor/build/
+./server 
 ```
 2. Open another terminal and run the GUI.
 ```bash
