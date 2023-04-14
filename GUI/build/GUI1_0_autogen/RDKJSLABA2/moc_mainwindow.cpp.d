@@ -1,123 +1,93 @@
-/home/oscar/Desktop/Track-Record_FINAL/local/build/GUI1_0_autogen/RDKJSLABA2/moc_mainwindow.cpp: /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/mainwindow.h \
-  /home/oscar/Desktop/Track-Record_FINAL/local/build/GUI1_0_autogen/moc_predefs.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/QTimer \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qalgorithms.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qanystringview.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qarraydata.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qarraydataops.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qarraydatapointer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qatomic.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qatomic_cxx11.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbasicatomic.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbasictimer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbindingstorage.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbytearray.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbytearraylist.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qbytearrayview.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qchar.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcompare.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcompare_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcompilerdetection.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qconfig.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcontainerfwd.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcontainerinfo.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcontainertools_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qcontiguouscache.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qdatastream.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qdebug.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qflags.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qforeach.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qgenericatomic.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qglobal.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qglobalstatic.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qhash.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qhashfunctions.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qiodevicebase.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qiterable.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qiterator.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qline.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qlist.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qlogging.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qmap.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qmargins.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qmath.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qmetacontainer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qmetatype.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qnamespace.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qnumeric.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qobject.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qobject_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qobjectdefs.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qpair.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qpoint.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qprocessordetection.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qrect.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qrefcount.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qscopedpointer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qscopeguard.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qset.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qshareddata.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qshareddata_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qsharedpointer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qsize.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstring.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringalgorithms.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringconverter_base.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringfwd.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringlist.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringliteral.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringmatcher.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringtokenizer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qstringview.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qsysinfo.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qsystemdetection.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtaggedpointer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtconfigmacros.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtcore-config.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtcoreexports.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtextstream.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtimer.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtmetamacros.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qtypeinfo.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qutf8stringview.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qvariant.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qvarlengtharray.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtCore/qversiontagging.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qaction.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qbitmap.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qbrush.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qcolor.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qcursor.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qfont.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qfontinfo.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qfontmetrics.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qicon.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qimage.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qkeysequence.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qpaintdevice.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qpalette.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qpixelformat.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qpixmap.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qpolygon.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qregion.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qrgb.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qrgba64.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qtgui-config.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qtguiexports.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qtguiglobal.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qtransform.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtGui/qwindowdefs.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/QMainWindow \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qmainwindow.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qsizepolicy.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qtabwidget.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-  /home/oscar/Qt/6.4.3/gcc_64/include/QtWidgets/qwidget.h \
+/home/oscar/Desktop/Track-Record/GUI/build/GUI1_0_autogen/RDKJSLABA2/moc_mainwindow.cpp: /home/oscar/Desktop/Track-Record/GUI/src/GUI/mainwindow.h \
+  /home/oscar/Desktop/Track-Record/GUI/build/GUI1_0_autogen/moc_predefs.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/QTimer \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qalgorithms.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qarraydata.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qatomic.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qatomic_cxx11.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qbasicatomic.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qbasictimer.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qbytearray.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qbytearraylist.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qchar.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qcompilerdetection.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qconfig.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qcontainerfwd.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qcontainertools_impl.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qdatastream.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qflags.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qgenericatomic.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qglobal.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qglobalstatic.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qhash.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qhashfunctions.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qiodevice.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qiterator.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qline.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qlist.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qlogging.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qmargins.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qmetatype.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qnamespace.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qnumeric.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qobject.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qobject_impl.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qobjectdefs.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qobjectdefs_impl.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qpair.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qpoint.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qprocessordetection.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qrect.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qrefcount.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qregexp.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qscopedpointer.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qshareddata.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qsharedpointer.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qsharedpointer_impl.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qsize.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstring.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstringalgorithms.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstringlist.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstringliteral.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstringmatcher.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qstringview.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qsysinfo.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qsystemdetection.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qtcore-config.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qtimer.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qtypeinfo.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qvarlengtharray.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qvector.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtCore/qversiontagging.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qbrush.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qcolor.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qcursor.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qfont.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qfontinfo.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qfontmetrics.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qicon.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qimage.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qkeysequence.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qmatrix.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qpaintdevice.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qpalette.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qpixelformat.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qpixmap.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qpolygon.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qregion.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qrgb.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qrgba64.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qtgui-config.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qtguiglobal.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qtransform.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtGui/qwindowdefs.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/QMainWindow \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qmainwindow.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qsizepolicy.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qtabwidget.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qtwidgets-config.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qtwidgetsglobal.h \
+  /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/include/QtWidgets/qwidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -149,7 +119,6 @@
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
@@ -177,7 +146,6 @@
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
@@ -279,7 +247,6 @@
   /usr/include/c++/11/new \
   /usr/include/c++/11/numbers \
   /usr/include/c++/11/numeric \
-  /usr/include/c++/11/optional \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
@@ -309,7 +276,6 @@
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
-  /usr/include/c++/11/variant \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -442,7 +408,6 @@
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
   /usr/local/include/opencv4/opencv2/calib3d.hpp \

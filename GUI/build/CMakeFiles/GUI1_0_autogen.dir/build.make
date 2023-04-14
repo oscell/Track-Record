@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record_FINAL/local
+CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record/GUI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record_FINAL/local/build
+CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record/GUI/build
 
 # Utility rule file for GUI1_0_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/GUI1_0_autogen.dir/compiler_depend.make
 include CMakeFiles/GUI1_0_autogen.dir/progress.make
 
 CMakeFiles/GUI1_0_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target GUI1_0"
-	/usr/bin/cmake -E cmake_autogen /home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles/GUI1_0_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target GUI1_0"
+	/usr/bin/cmake -E cmake_autogen /home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles/GUI1_0_autogen.dir/AutogenInfo.json ""
 
 GUI1_0_autogen: CMakeFiles/GUI1_0_autogen
 GUI1_0_autogen: CMakeFiles/GUI1_0_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/GUI1_0_autogen.dir/clean:
 .PHONY : CMakeFiles/GUI1_0_autogen.dir/clean
 
 CMakeFiles/GUI1_0_autogen.dir/depend:
-	cd /home/oscar/Desktop/Track-Record_FINAL/local/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record_FINAL/local /home/oscar/Desktop/Track-Record_FINAL/local /home/oscar/Desktop/Track-Record_FINAL/local/build /home/oscar/Desktop/Track-Record_FINAL/local/build /home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles/GUI1_0_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oscar/Desktop/Track-Record/GUI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record/GUI /home/oscar/Desktop/Track-Record/GUI /home/oscar/Desktop/Track-Record/GUI/build /home/oscar/Desktop/Track-Record/GUI/build /home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles/GUI1_0_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GUI1_0_autogen.dir/depend
 

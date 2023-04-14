@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record_FINAL/local
+CMAKE_SOURCE_DIR = /home/oscar/Desktop/Track-Record/GUI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record_FINAL/local/build
+CMAKE_BINARY_DIR = /home/oscar/Desktop/Track-Record/GUI/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GUI1_0.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/GUI1_0.dir/flags.make
 CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o: CMakeFiles/GUI1_0.dir/flags.make
 CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o: GUI1_0_autogen/mocs_compilation.cpp
 CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o: CMakeFiles/GUI1_0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o -MF CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o -c /home/oscar/Desktop/Track-Record_FINAL/local/build/GUI1_0_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o -MF CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/build/GUI1_0_autogen/mocs_compilation.cpp
 
 CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record_FINAL/local/build/GUI1_0_autogen/mocs_compilation.cpp > CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/build/GUI1_0_autogen/mocs_compilation.cpp > CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record_FINAL/local/build/GUI1_0_autogen/mocs_compilation.cpp -o CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/build/GUI1_0_autogen/mocs_compilation.cpp -o CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o: CMakeFiles/GUI1_0.dir/flags.make
 CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o: ../src/GUI/main.cpp
 CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o: CMakeFiles/GUI1_0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o -MF CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o.d -o CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o -c /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o -MF CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o.d -o CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/src/GUI/main.cpp
 
 CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/main.cpp > CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/src/GUI/main.cpp > CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.i
 
 CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/main.cpp -o CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/src/GUI/main.cpp -o CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.s
 
 CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o: CMakeFiles/GUI1_0.dir/flags.make
 CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o: ../src/GUI/mainwindow.cpp
 CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o: CMakeFiles/GUI1_0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o -MF CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o.d -o CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o -c /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o -MF CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o.d -o CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o -c /home/oscar/Desktop/Track-Record/GUI/src/GUI/mainwindow.cpp
 
 CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/mainwindow.cpp > CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oscar/Desktop/Track-Record/GUI/src/GUI/mainwindow.cpp > CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.i
 
 CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record_FINAL/local/src/GUI/mainwindow.cpp -o CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oscar/Desktop/Track-Record/GUI/src/GUI/mainwindow.cpp -o CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.s
 
 # Object files for target GUI1_0
 GUI1_0_OBJECTS = \
@@ -124,7 +124,7 @@ GUI1_0: CMakeFiles/GUI1_0.dir/GUI1_0_autogen/mocs_compilation.cpp.o
 GUI1_0: CMakeFiles/GUI1_0.dir/src/GUI/main.cpp.o
 GUI1_0: CMakeFiles/GUI1_0.dir/src/GUI/mainwindow.cpp.o
 GUI1_0: CMakeFiles/GUI1_0.dir/build.make
-GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Widgets.so.6.4.3
+GUI1_0: /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/lib/libQt5Widgets.so.5.15.5
 GUI1_0: /usr/local/lib/libopencv_gapi.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_highgui.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_ml.so.4.7.0
@@ -133,10 +133,8 @@ GUI1_0: /usr/local/lib/libopencv_photo.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_stitching.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_video.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_videoio.so.4.7.0
-GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Gui.so.6.4.3
-GUI1_0: /home/oscar/Qt/6.4.3/gcc_64/lib/libQt6Core.so.6.4.3
-GUI1_0: /usr/lib/x86_64-linux-gnu/libGLX.so
-GUI1_0: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+GUI1_0: /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/lib/libQt5Gui.so.5.15.5
+GUI1_0: /home/oscar/Qt/Tools/QtDesignStudio/qt5_design_studio_reduced_version/lib/libQt5Core.so.5.15.5
 GUI1_0: /usr/local/lib/libopencv_imgcodecs.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_dnn.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_calib3d.so.4.7.0
@@ -145,7 +143,7 @@ GUI1_0: /usr/local/lib/libopencv_flann.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_imgproc.so.4.7.0
 GUI1_0: /usr/local/lib/libopencv_core.so.4.7.0
 GUI1_0: CMakeFiles/GUI1_0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GUI1_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GUI1_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GUI1_0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -157,6 +155,6 @@ CMakeFiles/GUI1_0.dir/clean:
 .PHONY : CMakeFiles/GUI1_0.dir/clean
 
 CMakeFiles/GUI1_0.dir/depend:
-	cd /home/oscar/Desktop/Track-Record_FINAL/local/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record_FINAL/local /home/oscar/Desktop/Track-Record_FINAL/local /home/oscar/Desktop/Track-Record_FINAL/local/build /home/oscar/Desktop/Track-Record_FINAL/local/build /home/oscar/Desktop/Track-Record_FINAL/local/build/CMakeFiles/GUI1_0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oscar/Desktop/Track-Record/GUI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oscar/Desktop/Track-Record/GUI /home/oscar/Desktop/Track-Record/GUI /home/oscar/Desktop/Track-Record/GUI/build /home/oscar/Desktop/Track-Record/GUI/build /home/oscar/Desktop/Track-Record/GUI/build/CMakeFiles/GUI1_0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GUI1_0.dir/depend
 
