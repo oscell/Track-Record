@@ -47,12 +47,12 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   sudo tar -xf lib_package.tar.gz -C /usr/include
   ```
   
-  - Create an executable in the main directory
+  - Create an executable in the `main/build/` directory
     - Open a terminal and navigate to the main directory
     - Run the following commands to create the executable "tracknrecord"
   
     ```bash
-    cmake CMakeLists.txt
+    cmake ..
     make
     ```
     - You should now see an executable named "tracknrecord" in the directory
