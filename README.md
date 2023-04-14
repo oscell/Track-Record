@@ -128,7 +128,7 @@ QString serverAddress = "<raspberry_pi_ip>"
 1. Before being able to run send command the server must be initialised.
 
 ```bash
-cd /main_refactor/build/
+cd /main/build/
 ./server 
 ```
 2. Open another terminal and run the GUI.
