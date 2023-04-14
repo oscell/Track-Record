@@ -2,13 +2,13 @@
 
 Find us on [Twitter](https://twitter.com/TrackrecordTeam) and [Instagram](https://www.instagram.com/_u/tracknrecordteam) to stay up to date with any of the latest developements or email us at tracknrecordteam@gmail.com to get in touch.
 
-## Dependencies
-The following need to be installed:
-- [CMake](https://cmake.org/download/)
-- [OpenCV](https://opencv.org/releases/)
+# GUI
+The GUI is built using Qt5.
 
-## Tutorials
-[Getting started: CMake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+![GUI](/Images/GUI.png)
 
-[Getting started: OpenCV](https://www.opencv-srf.com/2017/11/install-opencv-with-visual-studio.html)
+## Tracking button
+This sends a signal to the client which toggles face tracking dependent on the state it is currently in.
 
+## Video feed
+This toggles the webcam on or off showing how the face detection works.
