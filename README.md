@@ -92,7 +92,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 
 ## GUI
 
-## Build
+## Instructions
 The GUI is built using Qt5. To find the path of your Qt5 installation, you can run the following command in your terminal:
 
 
@@ -120,6 +120,13 @@ to
 
 ```c++
 QString serverAddress = "<raspberry_pi_ip>"
+```
+## Build
+
+```bash
+cd /local/build/
+cmake ..
+make
 ```
 
 ## Usage
