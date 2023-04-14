@@ -5,17 +5,6 @@ project( tracknrecord )
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
-
-set(GUI_PROJECT_SOURCES
-        src/GUI/main.cpp
-        src/GUI/mainwindow.cpp
-        src/GUI/mainwindow.h
-        src/GUI/mainwindow.ui
-)
-
-
 
 find_package(OpenCV REQUIRED)
 find_package(Threads REQUIRED)
