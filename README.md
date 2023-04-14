@@ -112,11 +112,11 @@ set(Qt5_DIR "/path/to/Qt5/lib/cmake/Qt5")
 1. The comunication with the raspberry pi is done through a server. Before being able to run send command the server must be initialised.
 
 ```bash
-./main/build/server 
+./main_refactor/build/server 
 ```
 2. Open another terminal and run the GUI.
 ```bash
- cd GUI/build/
+ cd local/build/
 ./GUI1_0
 ```
 
