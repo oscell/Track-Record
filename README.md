@@ -47,11 +47,12 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   sudo tar -xf lib_package.tar.gz -C /usr/include
   ```
   
-  - Create an executable in the `main/build/` directory
+  - Create an executable in the `main/build` directory
     - Open a terminal and navigate to the main directory
     - Run the following commands to create the executable "tracknrecord"
   
     ```bash
+    mkdir -p build && cd build
     cmake ..
     make
     ```
@@ -124,7 +125,8 @@ QString serverAddress = "<raspberry_pi_ip>"
 ## Build
 
 ```bash
-cd /local/build/
+cd /local/
+mkdir -p build && cd build
 cmake ..
 make
 ```
