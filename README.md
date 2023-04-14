@@ -90,7 +90,42 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   - SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
   - Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
 
-## GUI usage
+## GUI
+
+## Build
+The GUI is built using Qt5. To find the path of your Qt5 installation, you can run the following command in your terminal:
 
 
+```bash
+find / -iname Qt5Config.cmake 2>/dev/null
+```
+
+Once you have the path, you can update your CMakeLists.txt file with the correct Qt5_DIR.
+
+```cmake
+set(Qt5_DIR "/path/to/Qt5/lib/cmake/Qt5")
+```
+
+## Usage
+
+
+1. The comunication with the raspberry pi is done through a server. Before being able to run send command the server must be initialised.
+
+```bash
+./main_refactor/build/server 
+```
+2. Open another terminal and run the GUI.
+```bash
+ cd local/build/
+./GUI1_0
+```
+
+Bellow is what it should look like.
+![GUI](/Images/GUI.png)
+
+### Tracking button
+This sends a signal to the client which toggles face tracking dependent on the state it is currently in.
+
+### Video feed
+This toggles the webcam on or off showing how the face detection works.
 
