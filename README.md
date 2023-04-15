@@ -101,7 +101,7 @@ The GUI is built using Qt5. To find the path of your Qt5 installation, you can r
 find / -iname Qt5Config.cmake 2>/dev/null
 ```
 
-Once you have the path, you can update the /local/CMakeLists.txt file with the correct Qt5_DIR.
+Once you have the path, you can update the `/local/CMakeLists.txt` file with the correct Qt5_DIR.
 
 ```cmake
 set(Qt5_DIR "/path/to/Qt5/lib/cmake/Qt5")
