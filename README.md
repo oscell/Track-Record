@@ -125,7 +125,7 @@ QString serverAddress = "<raspberry_pi_ip>"
 ## Build
 
 ```bash
-cd /local/
+cd local/
 mkdir -p build && cd build
 cmake ..
 make
