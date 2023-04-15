@@ -19,6 +19,7 @@ The following libraries were used throughout the project:
 - [CMake](https://cmake.org/download/)
 - [OpenCV](https://opencv.org/releases/)
 - [BCM2835](https://www.airspayce.com/mikem/bcm2835/index.html)
+- [QT5](https://wiki.qt.io/Qt_for_Beginners)
 
 ## Installation and Usage
 This project aims to build a standalone plug and play type product.
@@ -56,7 +57,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
     cmake ..
     make
     ```
-    - You should now see an executable named "tracknrecord" in the directory
+    - You should now see two executables named "tracknrecord" and "server" in the directory
   
   - Set executable permission to run on startup
     - Open a terminal and run the following commands
@@ -67,7 +68,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
     ```
     
     - Copy or type the following text into the "track.desktop" file.
-    - Replace the "directory" with the location of the executable named 'tracknrecord' located in the main folder. (eg. home/pi/...)
+    - Replace the "directory" with the location of the executable named 'server.cpp' located in the main folder. (eg. home/pi/...)
     
     ```bash
     [Desktop Entry]
@@ -76,25 +77,33 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
     Exec="directory"
     ```
     - Save the file using: Ctrl+X -> Y
-    
+  
 - Step 3:
+  - Setup the GUI* as shown in section 2 of the footnotes.
+
+- Step 4:
   - Reboot the Pi from the terminal and it is ready to go.
     ```bash
     sudo reboot
     ```
+   - The Pi should now be listening for commands.
+    - Ensure the Pi and your personal machine are on the same network.
+    - Open the GUI on your personal machine and click "start tracking".
+    - To view the video feed, click the video feed button.
     
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
 ## *Footnotes  
   
+### Section 1
 - Additonal information
   - [Raspberry Pi PinOut diagram](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
   - SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
   - Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
 
-## GUI
 
-## Instructions
-The GUI is built using Qt5. To find the path of your Qt5 installation, you can run the following command in your terminal:
+###  Section 2
+- GUI build Instructions
+The GUI is built using Qt5. To find the path of your Qt5 installation, set up the C++, cmake, and QT5 on your personal machine and run the following command in the terminal:
 
 
 ```bash
@@ -122,7 +131,8 @@ to
 ```c++
 QString serverAddress = "<raspberry_pi_ip>"
 ```
-## Build
+
+### Build
 
 ```bash
 cd local/
@@ -131,8 +141,7 @@ cmake ..
 make
 ```
 
-## Usage
-
+### Usage
 
 1. Before being able to run send command the server must be initialised.
 
