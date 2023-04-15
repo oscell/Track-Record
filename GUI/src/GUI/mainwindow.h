@@ -14,23 +14,21 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr, const QString &serverAddress = "127.0.0.1");
     ~MainWindow();
 
 private slots:
-    // void on_pushButton_clicked();
-    // void on_terminateButton_clicked();
-    void displayVideoFeed(); 
+    void displayVideoFeed();
     void on_startVideoFeedButton_clicked();
     void on_toggleSendValueButton_clicked();
-    // void toggleSendValueButtonClicked();
 
 private:
     Ui::MainWindow *ui;
+    QTimer *timer;
     cv::VideoCapture cap;
-    QTimer *timer; 
     bool videoFeedActive;
-    bool sendOne; 
+    bool sendOne;
+    QString serverAddr; // Add this line
 };
 
 #endif // MAINWINDOW_H

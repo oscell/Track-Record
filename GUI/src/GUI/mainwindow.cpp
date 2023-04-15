@@ -25,9 +25,10 @@ QString readStyleSheet(const QString &file_path) {
     return styleSheet;
 }
 
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(QWidget *parent, const QString &serverAddress)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , serverAddr(serverAddress)
 {
     ui->setupUi(this);
 
@@ -118,7 +119,6 @@ void MainWindow::on_startVideoFeedButton_clicked()
 }
 
 
-
 void MainWindow::on_toggleSendValueButton_clicked()
 {
     // Create a socket
@@ -131,12 +131,10 @@ void MainWindow::on_toggleSendValueButton_clicked()
     // Connect to the server
     struct sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    server_addr.sin_addr.s_addr = inet_addr(serverAddr.toStdString().c_str());
     server_addr.sin_port = htons(8080);
     
     if (::connect(client_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
-        
-
         QMessageBox msgBox;
         msgBox.setText("Connection to server failed");
         msgBox.exec();
@@ -147,8 +145,7 @@ void MainWindow::on_toggleSendValueButton_clicked()
     // Send the integer 1 or 0 to the server based on the value of sendOne
     int number = sendOne ? 1 : 0;
     send(client_fd, &number, sizeof(number), 0);
-    std::cout << "sendOne: " << sendOne << ", number: " << number << std::endl; // Add this line to print the values
-
+    std::cout << "sendOne: " << sendOne << ", number: " << number << std::endl;
 
     if (sendOne){
         ui->toggleSendValueButton->setText("Start Tracking");

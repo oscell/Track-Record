@@ -10,9 +10,7 @@ QPushButton#toggleSendValueButton[trackingActive="false"]{
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
-    transition-duration: 0.2s;
 }
 
 QPushButton#toggleSendValueButton[trackingActive="false"]:hover {
@@ -27,9 +25,7 @@ QPushButton#toggleSendValueButton[trackingActive="true"] {
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
-    transition-duration: 0.2s;
 }
 
 QPushButton#toggleSendValueButton[trackingActive="true"]:hover {
@@ -43,9 +39,7 @@ QPushButton#startVideoFeedButton {
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
-    transition-duration: 0.2s;
 }
 
 QPushButton#startVideoFeedButton[videoFeedActive="false"] {

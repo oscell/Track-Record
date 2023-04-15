@@ -1,5 +1,5 @@
-CMakeFiles/client.dir/src/client.cpp.o: \
- /home/oscar/Desktop/Track-Record/main/src/client.cpp \
+CMakeFiles/server.dir/src/server.cpp.o: \
+ /home/oscar/Desktop/Track-Record/main/src/server.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
