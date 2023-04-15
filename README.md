@@ -137,7 +137,7 @@ make
 1. Before being able to run send command the server must be initialised.
 
 ```bash
-cd /main/build/
+cd main/build/
 ./server 
 ```
 2. Open another terminal and run the GUI.
