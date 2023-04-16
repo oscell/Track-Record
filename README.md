@@ -155,12 +155,13 @@ cd main/build/
 ./GUI1_0
 ```
 
-Bellow is what it should look like.
+The GUI should look like this:
+
 ![GUI](/Images/GUI.png)
 
 ### Tracking button
-This sends a signal to the client which toggles face tracking dependent on the state it is currently in.
+This sends a signal to the client which toggles the tracknrecord executable depending on the state it is currently in.
 
 ### Video feed
-This toggles the webcam on or off showing how the face detection works.
+This toggles the user webcam to show how face detection and tracking works.
 
