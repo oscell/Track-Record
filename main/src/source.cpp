@@ -55,7 +55,6 @@ class movement
 			bcm2835_gpio_set(18); // setting pin 18 to high
 			bcm2835_delayMicroseconds((int)on_time); // leaving it on high for time specified
 			bcm2835_gpio_clr(18); // setting pin 18 to low
-			bcm2835_delayMicroseconds(20000 - (int)on_time); // 20000 = 20ms
 		}
 	}
 
@@ -88,7 +87,6 @@ class movement
 			bcm2835_gpio_set(17); // setting pin 17 to high
 			bcm2835_delayMicroseconds((int)on_time); // leaving it on high for time specified
 			bcm2835_gpio_clr(17); // setting pin 18 to low
-			bcm2835_delayMicroseconds(20000 - (int)on_time); // 20000 = 20ms
 		}
 	}
 };
@@ -229,20 +227,20 @@ class recognition : public movement
 	
 		cv::Mat frame;
 		cv::Mat gray;
-		cv::flip(frame, frame, 1); // Flipping the frame horizontally
-	
+		
 		// Processing the frames to get required values
 		while (cap.read(frame))
 		{
-			cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY); // Converting the frames to grayscale to enable better face detection
-			
 			// Getting the center co-ordinates of the captured frame
 			int x_frame_centr = (frame.cols*0.5); // Cap width div by 2
 			int y_frame_centr = (frame.rows*0.5); // Cap height div by 
-		
+			
+			cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY); // Converting the frames to grayscale to enable better face detection
+			cv::flip(gray, gray, 1); // Flipping the frame horizontally
+
 			// Detecting the faces from the grayscale frames and storing them in "faces" 
 			std::vector<cv::Rect> faces;
-			face_det.detectMultiScale(gray, faces);
+			face_det.detectMultiScale(gray, faces, 1.5, 6, CV_HAAR_DO_CANNY_PRUNING, Size(30,30)); // Change the parameters for debugging
 		
 			for (const auto& face : faces)
 			{
@@ -255,7 +253,7 @@ class recognition : public movement
 				previous_angles = track(x_face_centr, y_face_centr, x_frame_centr, y_frame_centr, flag, previous_angles[0], previous_angles[1]); // Calling the track function
 			}
 		
-			// Debugging for developers -- Show the captured frames (Video Feed)
+			// Debugging for development -- Show the captured frames (Video Feed)
 			/*
 			// Show the frame in grayscale for better speed
 			cv::imshow("Webcam Feed", gray);   
