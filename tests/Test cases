@@ -1,0 +1,9 @@
+High level test cases report for tracking using the motors and cameras.
+Check if the pan motor resets to 90 degrees upon running the executable. - Passed
+Check if the tilt motor resets to 90 degrees upon running the executable. - Passed
+Turn off the power while the code is running and start the machine and check if the motors are resetting to 90 degrees - Passed
+Move slowly (about 2 degrees/sec) and check if the motors are able to keep a track of you. - Passed
+Move fast (>2 degrees/sec) and check if the motors are able to keep a track of you. - Passed
+Move out of the field of view of the camera very fast and check if the state of the motors remains unchanged. - Passed
+Move out of the field of view of the camera slowly and check if the motors move to 0 or 180 degrees based on the direction you moved. - Passed
+Manually feed in the angle the motor is supposed to move using the move code and check if the motors are moving according to the angle.
