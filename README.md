@@ -94,14 +94,13 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
 ## *Footnotes  
   
-### Section 1
-- Additonal information
-  - [Raspberry Pi PinOut diagram](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
-  - SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
-  - Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
+### Section 1: Additonal information
+- [Raspberry Pi PinOut diagram](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
+- SG92r wiring: Red for Power, Brown for Ground, and Yellow/Orange for Data.
+- Set up [Raspberry Pi in headless mode](https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/) without a display and other hardware.
 
 
-###  Section 2
+###  Section 2: GUI
 - GUI build Instructions
 The GUI is built using Qt5. To find the path of your Qt5 installation, set up the C++, cmake, and QT5 on your personal machine and run the following command in the terminal:
 
