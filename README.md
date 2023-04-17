@@ -113,8 +113,7 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 
   - To view the video feed, click the video feed button.
 
-- Info regarding testing our product:
-  - The test report and the code we used for tests is available on a different branch of this repo. It can be accessed using https://github.com/oscell/Track-Record/tree/tests/tests
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## *Footnotes  
@@ -209,7 +208,11 @@ The GUI should look like this:
 
 ![GUI](/assets/GUI.png)
 
-## Section 3: 3D printing material
+### Section 3: Testing
+
+The test report and the code we used for tests is available on a different branch of this repo. It can be accessed using https://github.com/oscell/Track-Record/tree/tests/tests
+
+### Section 4: 3D printing material
 
 The Solidworks assemblies are provided in `Solidworks/`. This will require version 2022 or above however. To print the latest version of the stand `.stl` files are available in `Solidworks/Stls/`.
 
