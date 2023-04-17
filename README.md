@@ -1,4 +1,4 @@
-![test](https://github.com/oscell/Track-Record/blob/5bf5b6f9409c1b4b8569f964b363590f647e12f0/Images/Logo_slogan.png)
+![test](https://github.com/oscell/Track-Record/blob/5bf5b6f9409c1b4b8569f964b363590f647e12f0/assets/Logo_slogan.png)
 
 - This project demonstrates a face tracking system built on a Raspberry Pi 3B platform.
 
@@ -101,9 +101,16 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 
 
 ###  Section 2: GUI
-- GUI build Instructions
-The GUI is built using Qt5. To find the path of your Qt5 installation, set up the C++, cmake, and QT5 on your personal machine and run the following command in the terminal:
+This section should be built locally (not on the raspberry PI). It will be used to comunicate with the PI to send commands.
 
+#### Dependencies
+As previously with the raspi install [cmake](https://cmake.org/download/) on your machine. The next step is to install [Qt5](https://www.qt.io/download) although this can be done simply on linux using the command:
+
+```bash
+sudo apt-get install qt5-default
+```
+
+To find the path of your Qt5 installation, set up the C++, cmake, and QT5 on your personal machine and run the following command in the terminal:
 
 ```bash
 find / -iname Qt5Config.cmake 2>/dev/null
@@ -142,25 +149,28 @@ make
 
 ### Usage
 
-1. Before being able to run send command the server must be initialised.
+### On the Raspi
+Before being able to run send command the server must be initialised on the raspi.
 
 ```bash
 cd main/build/
 ./server 
 ```
-2. Open another terminal and run the GUI.
+### On your local machine
+Run the GUI.
 ```bash
  cd local/build/
 ./GUI1_0
 ```
-
-The GUI should look like this:
-
-![GUI](/Images/GUI.png)
+It is comprised of a section for vieo feed input and 2 buttons.
 
 ### Tracking button
 This sends a signal to the client which toggles the tracknrecord executable depending on the state it is currently in.
 
 ### Video feed
 This toggles the user webcam to show how face detection and tracking works.
+The GUI should look like this:
+
+![GUI](/assets/GUI.png)
+
 
