@@ -113,6 +113,8 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
 
   - To view the video feed, click the video feed button.
 
+Info regarding testing our product:
+The test report and the code we used for tests is available on a different branch of this repo. It can be accessed using https://github.com/oscell/Track-Record/tree/tests/tests
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## *Footnotes  
