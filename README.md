@@ -17,7 +17,7 @@ Find us on [Twitter](https://twitter.com/TrackrecordTeam) and [Instagram](https:
 
 ## Hardware
 
-The following electronic components were used to builf the project:
+The following electronic components were used to build the project:
 
 - [Raspberry Pi 3B](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/)
 
