@@ -206,3 +206,19 @@ This toggles the user webcam to show how face detection and tracking works.
 The GUI should look like this:
 
 ![GUI](/assets/GUI.png)
+
+## Section 3: 3D printing material
+
+The Solidworks assemblies are provided in `Solidworks/`. This will require version 2022 or above however. To print the latest version of the stand `.stl` files are available in `Solidworks/Stls/`.
+
+### Exploded view
+
+***Note***: In out product demonstration the base used was the `Base_old` as we did not have time to 3D print such a large base.
+
+Once assembled model looks like:
+
+![NormalVew](assets\SolidworksModel.png)
+
+and in exploded view:
+
+![explodeView](assets\ExplodedView.png)
