@@ -20,9 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Logo_slogan.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="..\assets\Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Track-Record
+   <div id="projectname">
    </div>
   </td>
  </tr>
@@ -66,7 +66,7 @@ $(function() {
 <div class="title">Track-Record Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><img src="https://github.com/oscell/Track-Record/blob/5bf5b6f9409c1b4b8569f964b363590f647e12f0/Images/Logo_slogan.png" alt="test" class="inline"/></p>
+<div class="textblock"><p><img src="..\assets\Logo_slogan.png" alt="test" class="inline"/></p>
 <ul>
 <li>This project demonstrates a face tracking system built on a Raspberry Pi 3B platform.</li>
 </ul>
@@ -115,25 +115,24 @@ Instructions</h2>
 <li><p class="startli">Create an executable in the main directory</p><ul>
 <li>Open a terminal and navigate to the main directory</li>
 <li>Run the following commands to create the executable "tracknrecord"</li>
-</ul>
-<p class="startli">```bash cmake CMakeLists.txt make ```</p><ul>
+ <div class="fragment"><div class="line">cmake CMakeLists.txt && make</div></div>
 <li>You should now see an executable named "tracknrecord" in the directory</li>
 </ul>
 </li>
 <li><p class="startli">Set executable permission to run on startup</p><ul>
 <li>Open a terminal and run the following commands</li>
 </ul>
-<p class="startli">```bash mkdir /home/pi/.config/autostart nano /home/pi/.config/autostart/track.desktop ```</p><ul>
+<div class="fragment"><div class="line">mkdir /home/pi/.config/autostart nano /home/pi/.config/autostart/track.desktop</div></div>
 <li>Copy or type the following text into the "track.desktop" file.</li>
 <li>Replace the "directory" with the location of the executable named 'tracknrecord' located in the main folder. (eg. home/pi/...)</li>
 </ul>
-<p class="startli">```bash [Desktop Entry] Type=Application Name=Track Exec="directory" ```</p><ul>
+<div class="fragment"><div class="line"></div>[Desktop Entry] Type=Application Name=Track Exec="directory"</div>
 <li>Save the file using: Ctrl+X -&gt; Y</li>
 </ul>
 </li>
 </ul>
 <p>Step 3:</p><ul>
-<li>Reboot the Pi from the terminal and it is ready to go. ```bash sudo reboot ```</li>
+<div class="fragment"><div class="line">sudo reboot</div></div>
 </ul>
 <hr  />
  <h2><a class="anchor" id="autotoc_md5"></a>
