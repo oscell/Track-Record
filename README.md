@@ -49,9 +49,9 @@ But wait there's more, you can build it on your own. Follow the instructions ahe
   - 3D print the models -- Check the Schematics and Solidworks directories or build your own model
 
 - Step 2: Software
-  - Make sure to have the latest compiler based on GCC/G++ or Clang/LLVM
-  - [Setup cmake](https://cmake.org/download/) on your Raspberry Pi
-  - Clone the repo, the libraries used are included with the git package
+  - Make sure to have the latest update for the GCC/G++ compiler on your Raspberry Pi OS.
+  - [Setup cmake](https://cmake.org/download/) on your Raspberry Pi.
+  - Clone the repo, the libraries used are included with the git package.
   
   ```git
   git clone https://github.com/oscell/Track-Record.git
