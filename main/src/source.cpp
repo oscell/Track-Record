@@ -85,7 +85,7 @@ class movement
 		for(i=0;i<pulse;i++)
 		{
 			bcm2835_gpio_set(17); // setting pin 17 to high
-			bcm2835_delayMicroseconds((int)on_time); // leaving it on high for time specified
+			bcm2835_delayMicroseconds((int)on_time); // leaving it on high for time specified. Necessary to allow motor to move to required angle. 
 			bcm2835_gpio_clr(17); // setting pin 18 to low
 		}
 	}
