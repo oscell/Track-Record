@@ -9,7 +9,7 @@
 | Tara Duggan         | Electronics and Design engineer | 2363956D |
 | Rohith Kambampati   | Backend developer and programmer               | 2782679K |
 
-Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which comunicates via a server sending commands to the Raspberry Pi.
+Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which communicates via a server sending commands to the Raspberry Pi.
 
 The full documentation can be found [here](https://tduggan63.github.io/Track-Record/index.html).
 
