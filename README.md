@@ -217,8 +217,8 @@ The Solidworks assemblies are provided in `Solidworks/`. This will require versi
 
 Once assembled model looks like:
 
-![NormalVew](assets\SolidworksModel.png)
+![NormalVew](/assets/SolidworksModel.png)
 
 and in exploded view:
 
-![explodeView](assets\ExplodedView.png)
+![explodeView](/assets/ExplodedView.png)
