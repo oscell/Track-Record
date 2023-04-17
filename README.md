@@ -7,7 +7,7 @@
 | Oscar Meunier       | Networks and design engineer     | 2391076M |
 | Sai Vamsi Karnam    | Face tracking developer          | GUID     |
 | Tara Duggan         | Electrical engineer & documentation | GUID   |
-| Rohith Kambampati   | Motor Developer                  | GUID     |
+| Rohith Kambampati   | Back end developer               | 2782679K |
 
 Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which comunicates via a server sending commands to the raspi.
 
@@ -217,8 +217,8 @@ The Solidworks assemblies are provided in `Solidworks/`. This will require versi
 
 Once assembled model looks like:
 
-![NormalVew](assets\SolidworksModel.png)
+![NormalVew](/assets/SolidworksModel.png)
 
 and in exploded view:
 
-![explodeView](assets\ExplodedView.png)
+![explodeView](/assets/ExplodedView.png)
