@@ -5,7 +5,7 @@
 | Name                | Responsibility                  | GUID     |
 |---------------------|----------------------------------|----------|
 | Oscar Meunier       | Networks and design engineer     | 2391076M |
-| Sai Vamsi Karnam    | Face tracking developer          | GUID     |
+| Sai Vamsi Karnam    | Face tracking developer          | 2805927K     |
 | Tara Duggan         | Electrical engineer & documentation | GUID   |
 | Rohith Kambampati   | Back end developer               | 2782679K |
 
