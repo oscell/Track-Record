@@ -1,7 +1,5 @@
 ![Logo](https://github.com/oscell/Track-Record/blob/Beta-1.x/assets/Logo_slogan.png)
 
-Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which comunicates via a server sending commands to the raspi.
-
 ## Team
 
 | Name                | Responsibility                  | GUID     |
@@ -10,6 +8,8 @@ Track-Record is a face tracking system built on the Raspberry Pi 3B platform, us
 | Sai Vamsi Karnam    | Face tracking developer          | GUID     |
 | Tara Duggan         | Electrical engineer & documentation | GUID   |
 | Rohith Kambampati   | Motor Developer                  | GUID     |
+
+Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which comunicates via a server sending commands to the raspi.
 
 The full documentation can be found [here](https://tduggan63.github.io/Track-Record/index.html).
 
