@@ -1,0 +1,221 @@
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md0}{}\doxysubsection{Team}\label{md_main_src__r_e_a_d_m_e_autotoc_md0}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Responsibility }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ G\+U\+ID  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Responsibility }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ G\+U\+ID  }\\\cline{1-3}
+\endhead
+Oscar Meunier &Networks and design engineer &2391076M  \\\cline{1-3}
+Sai Vamsi Karnam &Face tracking developer &G\+U\+ID  \\\cline{1-3}
+Tara Duggan &Electrical engineer \& documentation &G\+U\+ID  \\\cline{1-3}
+Rohith Kambampati &Motor Developer &G\+U\+ID  \\\cline{1-3}
+\end{longtabu}
+
+
+Track-\/\+Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-\/time face detection and tracking. A G\+UI is also implemented which comunicates via a server sending commands to the raspi.
+
+The full documentation can be found \href{https://tduggan63.github.io/Track-Record/index.html}{\texttt{ here}}.
+
+Find us on \href{https://twitter.com/TrackrecordTeam}{\texttt{ Twitter}} and \href{https://www.instagram.com/_u/tracknrecordteam}{\texttt{ Instagram}} to stay up to date with any of the latest developements or email us at \href{mailto:tracknrecordteam@gmail.com}{\texttt{ tracknrecordteam@gmail.\+com}} to get in touch.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{Hardware}\label{md_main_src__r_e_a_d_m_e_autotoc_md1}
+The following electronic components were used to builf the project\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://www.raspberrypi.com/products/raspberry-pi-3-model-b/}{\texttt{ Raspberry Pi 3B}}
+\item \mbox{[}SD Card\mbox{]} -\/ One with a memory capacity of 16 gigs or more.
+\item \href{https://www.raspberrypi.com/products/camera-module-v2/}{\texttt{ Pi Camera module 2}}
+\item \href{https://www.towerpro.com.tw/product/sg92r-7/}{\texttt{ S\+G92R Servo}}
+\end{DoxyItemize}\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Software Dependencies}\label{md_main_src__r_e_a_d_m_e_autotoc_md2}
+The following libraries were used throughout the project\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://cmake.org/download/}{\texttt{ C\+Make}}
+\item \href{https://opencv.org/releases/}{\texttt{ Open\+CV}}
+\item \href{https://www.airspayce.com/mikem/bcm2835/index.html}{\texttt{ B\+C\+M2835}}
+\item \href{https://wiki.qt.io/Qt_for_Beginners}{\texttt{ Q\+T5}}
+\end{DoxyItemize}\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Installation and Usage}\label{md_main_src__r_e_a_d_m_e_autotoc_md3}
+This project aims to build a standalone plug and play type product. Clip the camera of your choice to the platform, switch the power on and watch it track you. But wait there\textquotesingle{}s more, you can build it on your own. Follow the instructions ahead.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Instructions}\label{md_main_src__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Step 1\+: Setting up the hardware
+\begin{DoxyItemize}
+\item \href{https://www.raspberrypi.com/documentation/computers/getting-started.html}{\texttt{ Install the OS}} and set up a display.$\ast$
+\item \href{https://www.raspberrypi.com/documentation/computers/compute-module.html\#attaching-a-raspberry-pi-camera-module}{\texttt{ Connect the Pi camera}}
+\item Connect the motors using the Pin\+Out diagram\+: Pan at Gpio 18, Tilt at Gpio 17
+\item 3D print the models -- Check the Schematics and Solidworks directories or build your own model
+\end{DoxyItemize}
+\item Step 2\+: Software
+\begin{DoxyItemize}
+\item Make sure to have the latest compiler based on G\+C\+C/\+G++ or Clang/\+L\+L\+VM
+\item \href{https://cmake.org/download/}{\texttt{ Setup cmake}} on your Raspberry Pi
+\item Clone the repo, the libraries used are included with the git package
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/oscell/Track-\/Record.git}
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Unpack the lib\+\_\+package archive to /usr/include
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo tar -\/xf lib\_package.tar.gz -\/C /usr/include}
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Create an executable in the {\ttfamily main/build} directory
+\begin{DoxyItemize}
+\item Open a terminal and navigate to the main directory
+\item Run the following commands to create the executable \char`\"{}tracknrecord\char`\"{}
+\end{DoxyItemize}
+
+\`{}\`{}\`{}bash mkdir -\/p build \&\& cd build cmake .. make \`{}\`{}\`{}
+\begin{DoxyItemize}
+\item You should now see two executables named \char`\"{}tracknrecord\char`\"{} and \char`\"{}server\char`\"{} in the directory
+\end{DoxyItemize}
+\item Set executable permission to run on startup
+\begin{DoxyItemize}
+\item Open a terminal and run the following commands
+\end{DoxyItemize}
+
+\`{}\`{}\`{}bash mkdir /home/pi/.config/autostart nano /home/pi/.config/autostart/track.\+desktop \`{}\`{}\`{}
+\begin{DoxyItemize}
+\item Copy or type the following text into the \char`\"{}track.\+desktop\char`\"{} file.
+\item Replace the \char`\"{}directory\char`\"{} with the location of the executable named \textquotesingle{}server.\+cpp\textquotesingle{} located in the main folder. (eg. home/pi/...)
+\end{DoxyItemize}
+
+\`{}\`{}\`{}bash \mbox{[}Desktop Entry\mbox{]} Type=Application Name=Track Exec=\char`\"{}directory\char`\"{} \`{}\`{}\`{}
+\begin{DoxyItemize}
+\item Save the file using\+: Ctrl+X -\/$>$ Y
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Step 3\+:
+\begin{DoxyItemize}
+\item Setup the G\+U\+I$\ast$ as shown in section 2 of the footnotes.
+\end{DoxyItemize}
+
+Step 4\+:
+\begin{DoxyItemize}
+\item Reboot the Pi from the terminal and it is ready to go.
+
+\`{}\`{}\`{}bash sudo reboot \`{}\`{}\`{}
+\item The Pi should now be listening for commands.
+\item Ensure the Pi and your personal machine are on the same network.
+\item Open the G\+UI on your personal machine and click \char`\"{}start tracking\char`\"{}.
+\item To view the video feed, click the video feed button.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{$\ast$\+Footnotes}\label{md_main_src__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Section 1\+: Additonal information}\label{md_main_src__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item \href{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}{\texttt{ Raspberry Pi Pin\+Out diagram}}
+\item S\+G92r wiring\+: Red for Power, Brown for Ground, and Yellow/\+Orange for Data.
+\item Set up \href{https://www.realvnc.com/en/blog/how-to-setup-vnc-connect-raspberry-pi/}{\texttt{ Raspberry Pi in headless mode}} without a display and other hardware.
+\end{DoxyItemize}\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Section 2\+: G\+UI}\label{md_main_src__r_e_a_d_m_e_autotoc_md8}
+This section should be built locally (not on the raspberry PI). It will be used to comunicate with the PI to send commands.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md9}{}\doxyparagraph{Dependencies}\label{md_main_src__r_e_a_d_m_e_autotoc_md9}
+As previously with the raspi install \href{https://cmake.org/download/}{\texttt{ cmake}} on your machine. The next step is to install \href{https://www.qt.io/download}{\texttt{ Qt5}} although this can be done simply on linux using the command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt-\/get install qt5-\/default}
+\end{DoxyCode}
+
+
+To find the path of your Qt5 installation, set up the C++, cmake, and Q\+T5 on your personal machine and run the following command in the terminal\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{find / -\/iname Qt5Config.cmake 2>/dev/null}
+\end{DoxyCode}
+
+
+Once you have the path, you can update the {\ttfamily /local/\+C\+Make\+Lists.txt} file with the correct Qt5\+\_\+\+D\+IR.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{set(Qt5\_DIR "/path/to/Qt5/lib/cmake/Qt5")}
+\end{DoxyCode}
+
+
+The comunication with the raspberry pi is done through a server. To find the IP adress of the raspery pi run in the raspberry pi terminal\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{hostname -\/I}
+\end{DoxyCode}
+
+
+In {\ttfamily /local/src/\+G\+U\+I/main.cpp} change\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{c++\}}
+\DoxyCodeLine{QString serverAddress = "127.0.0.1";}
+\end{DoxyCode}
+
+
+to
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{c++\}}
+\DoxyCodeLine{QString serverAddress = "<raspberry\_pi\_ip>"}
+\end{DoxyCode}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{Build}\label{md_main_src__r_e_a_d_m_e_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd local/}
+\DoxyCodeLine{mkdir -\/p build \&\& cd build}
+\DoxyCodeLine{cmake ..}
+\DoxyCodeLine{make}
+\end{DoxyCode}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md11}{}\doxysubsubsection{Usage}\label{md_main_src__r_e_a_d_m_e_autotoc_md11}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md12}{}\doxysubsubsection{On the Raspi}\label{md_main_src__r_e_a_d_m_e_autotoc_md12}
+Before being able to run send command the server must be initialised on the raspi.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd main/build/}
+\DoxyCodeLine{./server }
+\end{DoxyCode}
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md13}{}\doxysubsubsection{On your local machine}\label{md_main_src__r_e_a_d_m_e_autotoc_md13}
+Run the G\+UI.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ cd local/build/}
+\DoxyCodeLine{./GUI1\_0}
+\end{DoxyCode}
+
+
+It is comprised of a section for vieo feed input and 2 buttons.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md14}{}\doxysubsubsection{Tracking button}\label{md_main_src__r_e_a_d_m_e_autotoc_md14}
+This sends a signal to the client which toggles the tracknrecord executable depending on the state it is currently in.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md15}{}\doxysubsubsection{Video feed}\label{md_main_src__r_e_a_d_m_e_autotoc_md15}
+This toggles the user webcam to show how face detection and tracking works. The G\+UI should look like this\+:
+
+\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md16}{}\doxysubsection{Section 3\+: 3\+D printing material}\label{md_main_src__r_e_a_d_m_e_autotoc_md16}
+The Solidworks assemblies are provided in {\ttfamily Solidworks/}. This will require version 2022 or above however. To print the latest version of the stand {\ttfamily .stl} files are available in {\ttfamily Solidworks/\+Stls/}.\hypertarget{md_main_src__r_e_a_d_m_e_autotoc_md17}{}\doxysubsubsection{Exploded view}\label{md_main_src__r_e_a_d_m_e_autotoc_md17}
+{\itshape {\bfseries{Note}}}\+: In out product demonstration the base used was the {\ttfamily Base\+\_\+old} as we did not have time to 3D print such a large base.
+
+Once assembled model looks like\+:
+
+
+
+and in exploded view\+:
+
+ 

@@ -1,0 +1,159 @@
+\hypertarget{classrecognition}{}\doxysection{recognition Class Reference}
+\label{classrecognition}\index{recognition@{recognition}}
+
+
+This class inherits from the movement class and contains functions for face tracking and detection.  
+
+
+
+
+Inheritance diagram for recognition\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classrecognition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for recognition\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classrecognition__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classrecognition_aa69e9812f80046e031aac8197c93494d}{track}} (int x\+\_\+face\+\_\+centr, int y\+\_\+face\+\_\+centr, int x\+\_\+frame\+\_\+centr, int y\+\_\+frame\+\_\+centr, int \mbox{\hyperlink{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}{flag}}, int \mbox{\hyperlink{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}{prev\+\_\+pan\+\_\+angle}}, int \mbox{\hyperlink{classrecognition_afefc16d7d3271da862597b338429cc41}{prev\+\_\+tilt\+\_\+angle}})
+\begin{DoxyCompactList}\small\item\em This function tracks the face based on conditions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classrecognition_a00f6ed271fb2928149ed1fb3ad80fb6e}{vision}} ()
+\begin{DoxyCompactList}\small\item\em This function tracks the movement and orientation of the face in real-\/time using a webcam. This function initializes the webcam, loads the face detection model, captures frames from the webcam, detects faces in the captured frames, and tracks the movement and orientation of the detected faces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classrecognition_a477488efbfe5534b2561cda7ae67658c}{previous\+\_\+angles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}{increment}} = 3
+\item 
+int \mbox{\hyperlink{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}{start\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_a339f4aaed15a0e17925adab680f59ad2}{pan\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}{tilt\+\_\+angle}} = 90
+\item 
+int \mbox{\hyperlink{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}{flag}} = 0
+\item 
+int \mbox{\hyperlink{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}{prev\+\_\+pan\+\_\+angle}} = 0
+\item 
+int \mbox{\hyperlink{classrecognition_afefc16d7d3271da862597b338429cc41}{prev\+\_\+tilt\+\_\+angle}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the movement class and contains functions for face tracking and detection. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrecognition_aa69e9812f80046e031aac8197c93494d}\label{classrecognition_aa69e9812f80046e031aac8197c93494d}} 
+\index{recognition@{recognition}!track@{track}}
+\index{track@{track}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{track()}{track()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ recognition\+::track (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+face\+\_\+centr,  }\item[{int}]{y\+\_\+face\+\_\+centr,  }\item[{int}]{x\+\_\+frame\+\_\+centr,  }\item[{int}]{y\+\_\+frame\+\_\+centr,  }\item[{int}]{flag,  }\item[{int}]{prev\+\_\+pan\+\_\+angle,  }\item[{int}]{prev\+\_\+tilt\+\_\+angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function tracks the face based on conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+face\+\_\+centr} & X-\/coordinate of the face centroid \\
+\hline
+{\em y\+\_\+face\+\_\+centr} & Y-\/coordinate of the face centroid \\
+\hline
+{\em x\+\_\+frame\+\_\+centr} & X-\/coordinate of the frame centroid \\
+\hline
+{\em y\+\_\+frame\+\_\+centr} & Y-\/coordinate of the frame centroid \\
+\hline
+{\em itr} & Iterator \\
+\hline
+{\em prev\+\_\+pan\+\_\+angle} & Previous pan angle of the motor \\
+\hline
+{\em prev\+\_\+tilt\+\_\+angle} & Previous tilt angle of the motor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing previous pan and tilt angles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrecognition_a00f6ed271fb2928149ed1fb3ad80fb6e}\label{classrecognition_a00f6ed271fb2928149ed1fb3ad80fb6e}} 
+\index{recognition@{recognition}!vision@{vision}}
+\index{vision@{vision}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{vision()}{vision()}}
+{\footnotesize\ttfamily int recognition\+::vision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function tracks the movement and orientation of the face in real-\/time using a webcam. This function initializes the webcam, loads the face detection model, captures frames from the webcam, detects faces in the captured frames, and tracks the movement and orientation of the detected faces. 
+
+\begin{DoxyReturn}{Returns}
+0 if the tracking was successful, -\/1 if there was an error. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}\label{classrecognition_a25ab5cb3ee53c7ccb3d4135ba012ef4b}} 
+\index{recognition@{recognition}!flag@{flag}}
+\index{flag@{flag}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int recognition\+::flag = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Iterator \mbox{\Hypertarget{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}\label{classrecognition_a4f72a031c6cc0ec36203ca28f3169c10}} 
+\index{recognition@{recognition}!increment@{increment}}
+\index{increment@{increment}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{increment}{increment}}
+{\footnotesize\ttfamily int recognition\+::increment = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+Increment to be added in pan/tilt angles \mbox{\Hypertarget{classrecognition_a339f4aaed15a0e17925adab680f59ad2}\label{classrecognition_a339f4aaed15a0e17925adab680f59ad2}} 
+\index{recognition@{recognition}!pan\_angle@{pan\_angle}}
+\index{pan\_angle@{pan\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{pan\_angle}{pan\_angle}}
+{\footnotesize\ttfamily int recognition\+::pan\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Pan angle of the motor \mbox{\Hypertarget{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}\label{classrecognition_a6c9a970a0039c707f6d616791bb9c4b8}} 
+\index{recognition@{recognition}!prev\_pan\_angle@{prev\_pan\_angle}}
+\index{prev\_pan\_angle@{prev\_pan\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{prev\_pan\_angle}{prev\_pan\_angle}}
+{\footnotesize\ttfamily int recognition\+::prev\+\_\+pan\+\_\+angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous pan angle of the motor \mbox{\Hypertarget{classrecognition_afefc16d7d3271da862597b338429cc41}\label{classrecognition_afefc16d7d3271da862597b338429cc41}} 
+\index{recognition@{recognition}!prev\_tilt\_angle@{prev\_tilt\_angle}}
+\index{prev\_tilt\_angle@{prev\_tilt\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{prev\_tilt\_angle}{prev\_tilt\_angle}}
+{\footnotesize\ttfamily int recognition\+::prev\+\_\+tilt\+\_\+angle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous tilt angle of the motor \mbox{\Hypertarget{classrecognition_a477488efbfe5534b2561cda7ae67658c}\label{classrecognition_a477488efbfe5534b2561cda7ae67658c}} 
+\index{recognition@{recognition}!previous\_angles@{previous\_angles}}
+\index{previous\_angles@{previous\_angles}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{previous\_angles}{previous\_angles}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ recognition\+::previous\+\_\+angles}
+
+Vector storing the previous pan and tilt angles \mbox{\Hypertarget{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}\label{classrecognition_a73c78e32d0dfe075b980a32c8b79cbbc}} 
+\index{recognition@{recognition}!start\_angle@{start\_angle}}
+\index{start\_angle@{start\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{start\_angle}{start\_angle}}
+{\footnotesize\ttfamily int recognition\+::start\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Starting angle of the motor \mbox{\Hypertarget{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}\label{classrecognition_af6db0bc2057fb1c1f9fe0a79ae0795f2}} 
+\index{recognition@{recognition}!tilt\_angle@{tilt\_angle}}
+\index{tilt\_angle@{tilt\_angle}!recognition@{recognition}}
+\doxysubsubsection{\texorpdfstring{tilt\_angle}{tilt\_angle}}
+{\footnotesize\ttfamily int recognition\+::tilt\+\_\+angle = 90\hspace{0.3cm}{\ttfamily [private]}}
+
+Tilt angle of the motor 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main/src/source.\+cpp\end{DoxyCompactItemize}
