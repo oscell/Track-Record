@@ -1,4 +1,4 @@
-![test](https://github.com/oscell/Track-Record/blob/Beta-1.x/assets/Logo_slogan.png)
+![Logo](https://github.com/oscell/Track-Record/blob/Beta-1.x/assets/Logo_slogan.png)
 
 - This project demonstrates a face tracking system built on a Raspberry Pi 3B platform.
 
