@@ -7,7 +7,7 @@
 | Oscar Meunier       | Networks and design engineer     | 2391076M |
 | Sai Vamsi Karnam    | Face tracking developer          | GUID     |
 | Tara Duggan         | Electrical engineer & documentation | GUID   |
-| Rohith Kambampati   | Motor Developer                  | GUID     |
+| Rohith Kambampati   | Motor Developer                  | 2782679K |
 
 Track-Record is a face tracking system built on the Raspberry Pi 3B platform, using a Pi Camera Module and servo motors for real-time face detection and tracking. A GUI is also implemented which comunicates via a server sending commands to the raspi.
 
